@@ -1,0 +1,69 @@
+# Benchmark "CM150" written by ABC on Thu Dec 11 16:52:20 2008
+.model CM150
+.inputs u t s r q p o n m l k j i h g f e d c b a
+.outputs v
+.default_input_arrival 0 0
+.gate or2f  A1=n72 A2=u Z=v
+.gate or2f  A1=n84 A2=n24 Z=n23
+.gate or2f  A1=s A2=n25 Z=n24
+.gate and2f A1=n26 A2=r Z=n25
+.gate or2f  A1=n40 A2=n52 Z=n26
+.gate or2f  A1=n74 A2=n79 Z=n27
+.gate and2f A1=n68 A2=n81 Z=n28
+.gate and2f A1=n30 A2=n80 Z=n29
+.gate or2f  A1=n49 A2=n53 Z=n30
+.gate and2f A1=h A2=q Z=n31
+.gate or2f  A1=n82 A2=n33 Z=n32
+.gate or2f  A1=s A2=n34 Z=n33
+.gate and2f A1=n35 A2=r Z=n34
+.gate or2f  A1=n76 A2=n54 Z=n35
+.gate and2f A1=n37 A2=n80 Z=n36
+.gate or2f  A1=n50 A2=n55 Z=n37
+.gate and2f A1=q A2=p Z=n38
+.gate inv1f I=q ZN=n39
+.gate inv1  I=n41 ZN=n40
+.gate or2f  A1=n44 A2=q Z=n41
+.gate inv1f I=m ZN=n42
+.gate inv1  I=e ZN=n43
+.gate inv1  I=c ZN=n44
+.gate inv1  I=n57 ZN=n45
+.gate inv1  I=n23 ZN=n46
+.gate or2f  A1=n48 A2=n46 Z=n47
+.gate inv1f I=n28 ZN=n48
+.gate inv1  I=n73 ZN=n49
+.gate inv1  I=n51 ZN=n50
+.gate or2   A1=n42 A2=q Z=n51
+.gate and2  A1=d A2=q Z=n52
+.gate and2  A1=f A2=q Z=n53
+.gate and2  A1=l A2=q Z=n54
+.gate and2  A1=n A2=q Z=n55
+.gate inv1  I=q ZN=n56
+.gate or2f  A1=n36 A2=n59 Z=n57
+.gate or2f  A1=n62 A2=n61 Z=n58
+.gate and2f A1=n58 A2=n60 Z=n59
+.gate or2   A1=n77 A2=r Z=n60
+.gate or2f  A1=n38 A2=n77 Z=n61
+.gate and2f A1=o A2=n56 Z=n62
+.gate and2f A1=n56 A2=n66 Z=n63
+.gate or2f  A1=n63 A2=n65 Z=n64
+.gate and2f A1=n31 A2=r Z=n65
+.gate and2f A1=g A2=r Z=n66
+.gate or2f  A1=n81 A2=n45 Z=n67
+.gate or2f  A1=n69 A2=n29 Z=n68
+.gate or2f  A1=n64 A2=n77 Z=n69
+.gate or2f  A1=n67 A2=n71 Z=n70
+.gate inv1f I=n32 ZN=n71
+.gate and2f A1=n70 A2=n47 Z=n72
+.gate or2f  A1=n43 A2=q Z=n73
+.gate and2  A1=a A2=n39 Z=n74
+.gate and2  A1=i A2=n39 Z=n75
+.gate and2  A1=k A2=n39 Z=n76
+.gate inv1  I=s ZN=n77
+.gate and2  A1=j A2=q Z=n78
+.gate and2  A1=b A2=q Z=n79
+.gate inv1  I=r ZN=n80
+.gate inv1  I=t ZN=n81
+.gate and2  A1=n83 A2=n80 Z=n82
+.gate or2   A1=n75 A2=n78 Z=n83
+.gate and2  A1=n27 A2=n80 Z=n84
+.end

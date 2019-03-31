@@ -1,0 +1,150 @@
+\chapter{Introduction}\label{chap-intro}
+As the clock frequencies used in printed circuit boards increase, bus delay has become an increasingly important factor in the performance of high-speed circuits. In a typical bus structure, the data in the bus are clocked into registers. Therefore, all data in different wires of the same bus need to arrive at their destinations approximately at the same time. Otherwise, the clock period needs to be lengthened to ensure all data are ready at their destinations for the registers. Studies show that higher clock frequency requires higher consistency in propagation delay of each wire in the bus \cite{IEEEexample:pcb_bus}. Since the propagation delay is directly proportional to the wire length, a higher degree of wire length matching is needed during bus routing for high-speed boards as well \cite{IEEEexample:lengthmatch}. These tighter wire length constraints raise challenges for automatic routers, and hence require more aggressive routing algorithms.
+
+Ozdal and Wong have been working on developing a large-scale routing system for high-end PCBs \cite{IEEEexample:ozdal_wong}. A typical PCB contains several bus structures that connect different modules like memory and input/output, in addition to individual nets. These interconnections need to satisfy rigid timing constraints due to high frequency of the clock on the boards. Ozdal and Wong focus on the single-layer bus routing problem, which assumes that layer assignments for each net have been done and all nets have been routed from their individual pins to chip boundaries \cite{IEEEexample:ozdal_wong}. Therefore, the problem is to route all nets between modules belonging to the same bus with the same length constraint. However, there can be interleaving of buses or nets that do not belong to any bus on the PCB boards \cite{IEEEexample:ozdal_wong}. For this reason, each net has an individual length constraint.
+
+Ozdal and Wong model the single-layer bus routing problem to be a river routing problem, which has been studied extensively during the past \cite{IEEEexample:river}--\nocite{IEEEexample:river2}\cite{IEEEexample:river3}. In a river routing problem, all terminal pins are aligned on two opposite sides of the circuit. There is an underlying grid where routes go center-to-center of each cell, and the terminal pins are aligned at the top and bottom rows of the grid. In addition, they added extra wire length constraints on all the nets for routing. Figure \ref{fig:sample_sol} gives an example of a routing solution of a single-layer bus routing problem that involves extension of wire length produced by Ozdal and Wong's algorithm. 
+
+\begin{figure}[here]
+  \begin{center}
+    \resizebox{\textwidth-85pt}{!}{
+      \includegraphics{sample_solution.png}
+    }
+  \end{center}
+  \caption{Sample routing solution that satisfies the length constraints.}
+  \label{fig:sample_sol}
+\end{figure}
+
+\section{Minimum-Area Maximum-Length Routing}\label{sec-minarea}
+In order to ensure that the individual length constraint is met, Ozdal and Wong enforce a minimum-area and a maximum-length constraint on each net. The objective is to route each net within maximum-length bound while allocating at least the pre-specified area. Therefore, the nets can be extended in this area during post processing. The shorter nets are allocated with more area for wire snaking meet minimum-length bound. The high-level algorithm for routing with minimum-area maximum-length constraint is shown here \cite{IEEEexample:ozdal_wong}:%\extraline
+
+%need to figure out how to cite this piece of code tomorrow.....
+
+\begin{tabbing}
+{\bf pro}\={\bf cedure} allocateArea:\\
+\> find the leftmost boundary $L_i$ for each net i\\
+\> find the rightmost boundary $R_i$ for each net i\\
+\> {\bf for} \=each net i from left to right  \\
+\> \> {\bf whi}\={\bf le} Route($L_i$, $L_{i+1}$) violates minimum-area constraint\\     
+\> \> \> flip an appropriate corner of $L_{i+1}$ rightwards%\extraline
+\end{tabbing}
+
+
+The algorithm first determines the leftmost and rightmost boundaries for all the nets, and the area between the right and left boundaries is where the net must be routed. These boundaries are decided by the previous net and the maximum detour, which is defined by maximum-length bound. Any grid cell that goes beyond the maximum detour is not allocated for the net, so it is not inside the boundary. After all the boundaries have been assigned, the algorithm starts routing the nets from left to right. Each net is routed as close to the previous net as possible while not detouring so much as to violate maximum-length bound. The remaining grid cells are used during post-processing when wire snaking is needed. An example of snaking is given in Figure \ref{fig:sample_snaking}. The net is guaranteed to meet the maximum constraint because the left and right boundaries are decided based on the maximum detour, which limits the length of the wire. Thus, the algorithm only checks for minimum-area constraint.
+
+%snaking!!!
+\begin{figure}[here]
+  \begin{center}
+    \resizebox{\textwidth-230pt}{!}{
+      \includegraphics{snaking.png}
+    }
+  \end{center}
+  \caption{Sample example of wire snaking to lengthen the wire.}
+  \label{fig:sample_snaking}
+\end{figure}
+
+
+
+After one net is first routed, the area is checked against the minimum-area constraint. If the area is below the constraint, the right boundary ($L_i$) will  need to be flipped towards the right until it satisfies the min-area constraint to leave enough cells for snaking during post processing. However, $L_i$ cannot go beyond the next net's right boundary ($L_{i+1}$). If $L_i$ cannot be flipped anymore, the net fails the minimum-area constraint. Each time the right boundary is flipped, the program routes the net and checks the area again. The details of boundary flipping are included in Ozdal and Wong's paper \cite{IEEEexample:ozdal_wong}.
+
+Even though the minimum-area constraint can guarantee that the net will have at least the minimum area available to route, it is difficult to make the transition from minimum-area constraint to minimum-length constraint. Depending on different shapes of boundaries, some cells can never be used to route. An example is displayed in Figure \ref{fig:sample_Xarea}, which is not from an actual result of the original program. In this example, the minimum-length bound is 40 for both nets. Both nets have the same available area in the figure, but the right net's maximum length is only 30 because the cells marked with X are not routable. The wire will run into a dead end eventually if those grid cells are routed. Therefore, the minimum-length constraint is needed to replace the minimum-area constraint. 
+
+\begin{figure}[here]
+  \begin{center}
+    \resizebox{\textwidth-70pt}{!}{
+      \includegraphics{sample_xarea2.png}
+    }
+  \end{center}
+  \caption{A sample case where the same number of available cells can result in different wire lengths.}
+  \label{fig:sample_Xarea}
+\end{figure}
+
+\section{Minimum-Length Maximum-Length Routing}\label{sec-minlength}
+The algorithm for routing with minimum-length constraint is almost the same with minimum-area. The difference is that wire length needs to be checked repetitively in all iterations during routing. It was trivial to calculate the total area between right and left boundaries after flipping the right boundary, which is just adding 1 to the available area. However, the calculation for the maximum length within the boundary uses a more complicated method. 
+
+To calculate the maximum routable wire length, two vertices, $v^l_k$ and $v^r_k$, are defined in each row $k$, with the exceptions of the first and last row. Those two rows only have one vertex, which is the terminal pin. The two vertices in other rows are chosen by comparing the boundaries of the current row with the row above it. The boundary that is closer to the middle of the grid is chosen. For example, if row k has $L_i$ at (3, k) and $R_i$ (7, k) and Row k-1 has $L_i$ (4, k-1) and $R_i$ (8, k-1), the program chooses (4, k) as $v^l_k$ and (7, k) as $v^r_k$. The two vertices in each row are the turning points for wire snaking. 
+
+An edge is defined from each vertex in row k to each vertex in row k+1. Since there are always two vertices for each row, the number of edges from one row to the next is $2\times2=4$. The length of these edges is defined by the Manhattan distance between the two vertices. For example, if $v^l_k=$ (2, k) and $v^r_k=$ (5, k) in row k, and $v^l_{k+1}=$ (3, k+1) and $v^r_{k+1}=$ (7, k+1) in row k+1, the length of the edge from $v^l_k$ to $v^l_{k+1}$ is $3-2+1=2$. The rest of the edges can be determined in the same way. 
+
+For each vertex in the grid, there is a corresponding maximum-distance label for it. This label is defined to be the maximum length from the vertex to the top terminal pin. It is calculated from the topmost row to bottommost row. For each vertex, there are two edges, which connect the current vertex to either the right or left vertex in the upper row. The maximum-distance label of the above vertex is added to the corresponding edge distance to calculate the maximum length. The program compares the maximum length between the left and right vertex in the upper row and sets the larger distance as maximum-distance label of the current vertex. For example, if $v^l_{k-1}$ has maximum-distance label 7 and edge distance 3 to $v^l_k$, and $v^r_{k-1}$ has maximum-distance label 9 and edge distance 2 to $v^l_k$, then the maximum distance of $v^l_k$ is set to $max(7+3,$ $9+2)=11$. 
+
+The maximum-distance label for the first row is initially set to 0, and the algorithm continues setting the maximum-distance label for the rest of the vertices until the last vertex is set. The maximum-distance label of the last vertex is the maximum length for the net. Figure \ref{fig:sample_maxlength} shows the maximum length corresponding to the left and right boundaries. The red dots correspond to left and right vertex in each row. Note that the first and last rows are not routable in the original program.
+
+\begin{figure}[here]
+  \begin{center}
+    \resizebox{\textwidth-200pt}{!}{
+      \includegraphics{maxlength.png}
+    }
+  \end{center}
+  \caption{A sample case of a net with the maximum length in the allocated cells.}
+  \label{fig:sample_maxlength}
+\end{figure}
+
+Right before the routing process begins, the router calculates the maximum length achievable with the initially allocated grids by using the process described above. If the maximum length is less than the minimum-length bound, the right boundary needs to be flipped. After the boundary is flipped, the new maximum wire length is checked against the minimum-bound again. If it still does not satisfy the min-bound, the right boundary will be flipped until either the maximum length satisfies the min-bound, or until the right boundary cannot be flipped anymore. If there is enough area for the net to route, the program will call the \textit{find\_route} function to do the actual routing for the current net.
+
+\section{Finding the Actual Route}\label{sec-findroute}
+
+At this stage, the left and right boundaries, the positions of the vertices in each row and the maximum-distance labels have all been decided. However, the minimum-distance label ($D_m$), which is also the Manhattan distance to the top terminal pin, is not yet determined for each grid cell inside the boundary. Maze routing is used to label all the grid cells with the minimum distance because it is suitable for timing-driven global routing \cite{IEEEexample:maze}-\cite{IEEEexample:maze2}. After all the labeling is done, the router starts from the bottom terminal pin and finds the next cell the net routes to until it reaches the top terminal pin. Typically, there are three choices for the next cell, top, left, and right, assuming that no boundary blocks its way. The program makes the decision by comparing $D_m$ of all three options. The direction with the lowest $D_m$ is chosen. If the distance is the same, the net favors going in horizontal directions over vertical direction. During this process, the program has a variable $l$ for keeping track of the current length of the wire. 
+
+After the next cell is chosen, the router adds $D_m$ with the wire length ($l$) and compares the result with the minimum-length bound. If the result is below the min-length bound, snaking is needed for the current row. It finds the vertex in the upper row that has the longer edge to the current cell and pushes it onto the \textit{route} vector. The program then adds the $D_m$ of the parent vertex and the length of the edge from the current cell to the parent vertex to $l$. If the result is still less than the min-length bound, more snaking needs to be performed in the remaining rows. 
+
+On the other hand, if the result is greater, only partial snaking needs to be used for the current row. Therefore, the parent cell can be any of the cells in the upper row. It is chosen by finding the cell that just satisfies the minimum-length bound. After that, the router can choose the parent cell by following the min path. The chosen parent grid cell is pushed onto the \textit{route} vector, and $l$ is updated to correspond to the parent grid cell. Figure \ref{fig:sample_parandfull} gives an example of partial snaking and full snaking. The left net corresponds partial snaking, while the right figure corresponds to full snaking. The algorithm performs this entire process until the net reaches the top terminal pin. The high-level algorithm for the \textit{find\_all\_route} function is shown below.
+
+\begin{tabbing}
+{\bf pro}\={\bf cedure} find\_all\_route:\\
+\> {\bf for} \= each net i from left to right  \\
+\> \> find the left and right boundaries that satisfies the\\ 
+\> \> min-length and max-length bound\\
+\> \> find the left and right vertex on each row and\\
+\> \> calculate their max-length label\\
+\> \> populate the allocated grid cells with maze routing\\
+\> \> //The actual routing begins here\\
+\> \> set current gcell to be the bottom terminal pin\\
+\> \> {\bf whi}\={\bf le}(current gcell!=top terminal pin)\\     
+\> \> \> choose the parent gcell based on min-distance label\\
+\> \> \> {\bf if}(\=$l$+min-distance label of parent gcell+1 $>$ min-length bound)\\
+\> \> \> \> current gcell=parent gcell;\\
+\> \> \> \> update $l$\\
+\> \> \> \> {\bf continue};\\
+
+\> \> \> //snaking is needed\\
+\> \> \> {\bf if}(fu\=ll snaking is needed)\\
+\> \> \> \> choose parent gcell to be the vertex that has longer edge\\
+\> \> \> \> update $l$\\
+\> \> \> {\bf else} \=\\
+\> \> \> \> find the parent gcell that just satisfy the min-length bound\\
+\> \> \> \> update $l$\\
+\> \> \> current gcell=parent gcell;\\
+\end{tabbing}
+%partial and full snaking
+\begin{figure}[here]
+  \begin{center}
+    \resizebox{\textwidth-50pt}{!}{
+      \includegraphics{parandfull.png}
+    }
+  \end{center}
+  \caption{A comparison between partial and full snaking.}
+  \label{fig:sample_parandfull}
+\end{figure}
+
+\section{Drawing the Actual Route}\label{sec-drawroute}
+When the parent grid cells are chosen, they are pushed onto a \textit{route} vector. Each net has its own \textit{route} vector, and they are drawn in the grid after all the nets finish routing. During the drawing process, the background grid cells are already drawn before routing. The grid cells are drawn from the top terminal pin to the bottom terminal pin by reading each element from top to bottom in the \textit{route} vector. If the grid cell is not adjacent to the last cell, it means snaking is needed. The nonadjacent cells are connected by drawing a line going down one cell and turning either left or right, depending on which vertex was chosen during routing. 
+
+\section{Thesis Overview}\label{sec-overview}
+Chapter \ref{chap-intro} provides the background of Ozdal and Wong's work on length-matching algorithm for single-layer bus routing. It discusses the reason for minimum- and maximum-length bounds and the routing process for each net. It gives examples of the program's solution with and without wire snaking and addresses the difference between minimum-area and minimum-length constraints. 
+
+Chapter \ref{chap-boundary} describes how a user can specify a grid's left and right boundaries in boundary files and the two different ways to produce these two files. 
+
+Chapter \ref{chap-labeling} discusses why individual net's right and left boundaries need to be disregarded for minimum-distance labeling. It also introduces a new method to determine the available grid cells for the current net and provides multiple examples of non-routable cells in different directions. 
+
+Chapter \ref{chap-routing} addresses the problem of unnecessary bending of nets along the left boundary. It introduces the method of giving the parent cell along the last direction priority over other directions if their minimum-distance label is the same. It also discusses how this approach can hurt the routability of the remaining nets such that a cap needs to be used to force the net to turn. 
+
+Chapter \ref{chap-snaking} discusses the effort of making the last row routable by each net and how different mid-points can be chosen to connect nonadjacent cells during routing. It also gives examples of how the maximum length of the wire can be different depending on which mid-point is chosen.  
+
+Chapter \ref{chap-diagonal} addresses the need for diagonal wires and how another program, \textit{diagonal}, is used to preprocess the input files and make independent routing in different regions that will be combined into one solution at the end. 
+
+Chapter \ref{chap-result} presents two examples with graphs to show the differences between the results of the original program and the new program. 
+
+Chapter \ref{chap-concl} summarizes the entire thesis and lists a number of improvements that can be made for the single-layer bus routing program. 
+
+

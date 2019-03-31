@@ -1,0 +1,81 @@
+# Benchmark "PARITYFDS" written by ABC on Thu Dec 11 16:52:20 2008
+.model PARITYFDS
+.inputs p o n m l k j i h g f e d c b a
+.outputs q
+.default_input_arrival 0 0
+.gate and2f A1=n19 A2=n18 Z=n17
+.gate or2f  A1=n61 A2=n68 Z=n18
+.gate or2f  A1=n59 A2=n69 Z=n19
+.gate inv1f I=n22 ZN=n20
+.gate and2f A1=n45 A2=n46 Z=n21
+.gate and2f A1=n48 A2=n49 Z=n22
+.gate inv1f I=n24 ZN=n23
+.gate and2f A1=n42 A2=n43 Z=n24
+.gate and2f A1=n41 A2=n26 Z=n25
+.gate or2f  A1=n80 A2=p Z=n26
+.gate inv1f I=p ZN=n27
+.gate inv1f I=n29 ZN=n28
+.gate and2f A1=n31 A2=n30 Z=n29
+.gate or2f  A1=n38 A2=n39 Z=n30
+.gate or2f  A1=n40 A2=n37 Z=n31
+.gate inv1  I=d ZN=n32
+.gate or2f  A1=n34 A2=n66 Z=n33
+.gate and2f A1=n84 A2=n57 Z=n34
+.gate or2f  A1=n36 A2=n85 Z=n35
+.gate and2f A1=n51 A2=n52 Z=n36
+.gate inv1f I=n38 ZN=n37
+.gate and2f A1=n33 A2=n65 Z=n38
+.gate inv1f I=n40 ZN=n39
+.gate and2f A1=n35 A2=n63 Z=n40
+.gate or2   A1=n27 A2=o Z=n41
+.gate or2   A1=n44 A2=m Z=n42
+.gate or2   A1=n79 A2=n Z=n43
+.gate inv1  I=n ZN=n44
+.gate or2   A1=n47 A2=i Z=n45
+.gate or2   A1=n77 A2=j Z=n46
+.gate inv1  I=j ZN=n47
+.gate or2   A1=n50 A2=k Z=n48
+.gate or2   A1=n78 A2=l Z=n49
+.gate inv1  I=l ZN=n50
+.gate or2   A1=n72 A2=g Z=n51
+.gate or2   A1=n76 A2=h Z=n52
+.gate and2  A1=n54 A2=n55 Z=n53
+.gate or2   A1=n71 A2=e Z=n54
+.gate or2   A1=n75 A2=f Z=n55
+.gate and2  A1=n81 A2=n82 Z=n56
+.gate or2   A1=n58 A2=d Z=n57
+.gate inv1  I=c ZN=n58
+.gate and2  A1=n88 A2=n60 Z=n59
+.gate or2   A1=n24 A2=n73 Z=n60
+.gate and2  A1=n86 A2=n87 Z=n61
+.gate inv1  I=n21 ZN=n62
+.gate or2   A1=n53 A2=n64 Z=n63
+.gate inv1  I=n36 ZN=n64
+.gate or2   A1=n56 A2=n70 Z=n65
+.gate inv1  I=n56 ZN=n66
+.gate or2   A1=n17 A2=n28 Z=n67
+.gate inv1  I=n59 ZN=n68
+.gate inv1  I=n61 ZN=n69
+.gate inv1  I=n34 ZN=n70
+.gate inv1  I=f ZN=n71
+.gate inv1  I=h ZN=n72
+.gate inv1  I=n25 ZN=n73
+.gate inv1  I=a ZN=n74
+.gate inv1  I=e ZN=n75
+.gate inv1  I=g ZN=n76
+.gate inv1  I=i ZN=n77
+.gate inv1  I=k ZN=n78
+.gate inv1  I=m ZN=n79
+.gate inv1  I=o ZN=n80
+.gate or2   A1=n83 A2=a Z=n81
+.gate or2   A1=n74 A2=b Z=n82
+.gate inv1  I=b ZN=n83
+.gate or2   A1=n32 A2=c Z=n84
+.gate inv1  I=n53 ZN=n85
+.gate or2   A1=n22 A2=n62 Z=n86
+.gate or2   A1=n21 A2=n20 Z=n87
+.gate or2   A1=n25 A2=n23 Z=n88
+.gate and2  A1=n28 A2=n17 Z=n89
+.gate inv1  I=n67 ZN=n90
+.gate or2   A1=n89 A2=n90 Z=q
+.end

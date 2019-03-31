@@ -1,0 +1,47 @@
+#include <vector>
+
+
+
+<template class T>class FIFO_Queue{
+
+  vector<T> data ;
+  int vector_size ;
+
+  int head ; // the first valid element
+  int tail ; // the first slot to add a new element
+  
+
+  int no_elts ;
+
+  inline resize(int newsize){
+    vector_size = newsize ;
+    data.resize(newsize) ;
+  }
+
+ public:
+  inline FIFO_Queue():head(-1), tail(0), vector_size(1), data(1), no_elts(0) ;
+
+  inline bool is_empty(){return no_elts == 0;} ;
+
+  inline void add(T item){
+    if (no_elts+1 < vector_size)
+      resize(vector_size * 2) ;
+
+#ifdef DEBUG
+    if (tail == head)
+      throw Logic_error("Data overwritten in FIFO") ;
+#endif
+
+    data[tail] = item ;
+    no_elts ++ ;
+
+    tail = (tail == vector_size-1) ? 0:tail+1 ;
+
+  }
+
+  inline T getNext(){
+    T item = data[head] ;
+    head = (head == vector_size-1) ? 0:head+1 ;
+
+
+}

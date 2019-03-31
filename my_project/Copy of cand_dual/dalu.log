@@ -1,0 +1,4 @@
+The hierarhical design dalu.dual.sv contains 2 modules:
+dalu                     : logicbox instantiated      0 times  pi =   75 po =   75 nd =      892 lat =      0 box =      1
+buf0                     : undefbox instantiated      1 times  pi =    0 po =    0 nd =        0 lat =      0 box =      0
+The outputs of all box instances are connected.

@@ -1,0 +1,99 @@
+.model cordic
+.inputs ey2 ey1 ey0 ex2 ex1 ex0 z2 z1 z0 y3 y2 y1 y0 x3 x2 x1 x0 v a5 a2 a3 a4 \
+a6
+.outputs dn d
+.default_input_arrival 0.00 0.00 
+.gate or2 A1=n25 A2=n60 Z=dn
+.gate and2f A1=n63 A2=n115 Z=d
+.gate or2 A1=n26 A2=n113 Z=n112
+.gate inv1 I=v ZN=n61
+.gate and2 A1=n112 A2=n61 Z=n25
+.gate and2 A1=n85 A2=n86 Z=n84
+.gate inv1 I=n28 ZN=n83
+.gate and2 A1=n84 A2=n83 Z=n26
+.gate and2 A1=n69 A2=n71 Z=n70
+.gate or2 A1=n107 A2=n78 Z=n106
+.gate or2 A1=n70 A2=n106 Z=n27
+.gate or2 A1=n94 A2=n75 Z=n51
+.gate or2 A1=n40 A2=n29 Z=n64
+.gate or2 A1=n51 A2=n64 Z=n28
+.gate and2 A1=n36 A2=n33 Z=n32
+.gate inv1 I=n31 ZN=n30
+.gate or2 A1=n32 A2=n30 Z=n29
+.gate or2 A1=n36 A2=n33 Z=n31
+.gate or2 A1=n38 A2=n37 Z=n36
+.gate and2 A1=n35 A2=n34 Z=n33
+.gate or2 A1=n53 A2=x0 Z=n35
+.gate or2 A1=n54 A2=x1 Z=n34
+.gate inv1 I=x0 ZN=n54
+.gate inv1 I=x1 ZN=n53
+.gate inv1 I=n39 ZN=n38
+.gate and2 A1=x2 A2=n68 Z=n37
+.gate inv1 I=x3 ZN=n68
+.gate or2 A1=n68 A2=x2 Z=n39
+.gate and2 A1=n44 A2=n46 Z=n43
+.gate inv1 I=n42 ZN=n41
+.gate or2 A1=n43 A2=n41 Z=n40
+.gate or2 A1=n44 A2=n46 Z=n42
+.gate and2 A1=n55 A2=n56 Z=n44
+.gate or2 A1=n48 A2=n47 Z=n46
+.gate or2 A1=n57 A2=y0 Z=n55
+.gate or2 A1=n45 A2=y1 Z=n56
+.gate inv1 I=y0 ZN=n45
+.gate inv1 I=n49 ZN=n48
+.gate and2 A1=y2 A2=n50 Z=n47
+.gate inv1 I=y3 ZN=n50
+.gate or2 A1=n50 A2=y2 Z=n49
+.gate and2 A1=n52 A2=z2 Z=n94
+.gate inv1 I=n92 ZN=n75
+.gate inv1 I=z0 ZN=n72
+.gate and2 A1=z1 A2=n72 Z=n52
+.gate inv1 I=y1 ZN=n57
+.gate and2 A1=ex1 A2=n73 Z=n77
+.gate or2 A1=n51 A2=n77 Z=n58
+.gate inv1f I=n115 ZN=n60
+.gate or2f A1=n116 A2=n88 Z=n115
+.gate and2f A1=n65 A2=n66 Z=n63
+.gate or2f A1=n27 A2=n67 Z=n65
+.gate or2 A1=v A2=n89 Z=n66
+.gate or2f A1=n108 A2=v Z=n67
+.gate or2 A1=n88 A2=n90 Z=n89
+.gate or2 A1=n109 A2=n110 Z=n108
+.gate or2 A1=n64 A2=n58 Z=n69
+.gate or2 A1=n77 A2=n79 Z=n71
+.gate or2 A1=n80 A2=n81 Z=n79
+.gate inv1 I=ex0 ZN=n73
+.gate inv1 I=ex1 ZN=n74
+.gate or2 A1=n93 A2=n72 Z=n92
+.gate inv1 I=ex2 ZN=n76
+.gate and2 A1=ex2 A2=n74 Z=n78
+.gate or2 A1=a4 A2=a2 Z=n80
+.gate inv1 I=n82 ZN=n81
+.gate and2 A1=a3 A2=a6 Z=n82
+.gate or2 A1=n101 A2=n87 Z=n85
+.gate or2 A1=n97 A2=n99 Z=n86
+.gate and2 A1=n102 A2=n104 Z=n101
+.gate and2 A1=n96 A2=ey2 Z=n87
+.gate and2 A1=n98 A2=n73 Z=n97
+.gate and2 A1=n100 A2=ex2 Z=n99
+.gate and2 A1=ey1 A2=ey0 Z=n96
+.gate or2 A1=a3 A2=a2 Z=n88
+.gate inv1 I=n91 ZN=n90
+.gate and2 A1=a6 A2=a4 Z=n91
+.gate or2 A1=z1 A2=z2 Z=n93
+.gate inv1 I=ey2 ZN=n95
+.gate and2 A1=n74 A2=n76 Z=n98
+.gate and2 A1=ex1 A2=ex0 Z=n100
+.gate and2 A1=n103 A2=n95 Z=n102
+.gate inv1 I=ey0 ZN=n104
+.gate inv1 I=ey1 ZN=n103
+.gate and2 A1=ey0 A2=n95 Z=n105
+.gate and2 A1=ex0 A2=n76 Z=n107
+.gate and2 A1=ey2 A2=n103 Z=n109
+.gate or2 A1=n111 A2=n105 Z=n110
+.gate and2 A1=ey1 A2=n104 Z=n111
+.gate inv1 I=n114 ZN=n113
+.gate and2 A1=n79 A2=n89 Z=n114
+.gate or2 A1=a4 A2=n117 Z=n116
+.gate or2 A1=a6 A2=a5 Z=n117
+.end

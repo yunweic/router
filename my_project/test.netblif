@@ -1,0 +1,16 @@
+.model model_circuit
+.inputs a b c d e f g h i j k l
+.outputs m
+.gate nand2 a=a b=b y=n
+.gate nand2 a=n b=c y=o
+.gate nand2 a=e b=d y=p
+.gate nand3 a=f b=g c=h y=q
+.gate nand2 a=q b=i y=r
+.gate nand2 a=i b=p y=s
+.gate nand2 a=o b=p y=t
+.gate nand2 a=r b=t y=u
+.gate nand2 a=s b=u y=v
+.gate nand2 a=j b=k y=w
+.gate nand2 a=w b=l y=x
+.gate nand2 a=x b=v y=m
+.end

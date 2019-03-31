@@ -1,0 +1,4 @@
+The hierarhical design k2.dual.sv contains 2 modules:
+k2                       : logicbox instantiated      0 times  pi =   45 po =   45 nd =     1024 lat =      0 box =     22
+buf0                     : undefbox instantiated     22 times  pi =    0 po =    0 nd =        0 lat =      0 box =      0
+The outputs of all box instances are connected.

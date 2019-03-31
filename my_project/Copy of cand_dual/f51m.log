@@ -1,0 +1,4 @@
+The hierarhical design f51m.dual.sv contains 2 modules:
+f51m                     : logicbox instantiated      0 times  pi =    8 po =    8 nd =      138 lat =      0 box =      4
+buf0                     : undefbox instantiated      4 times  pi =    0 po =    0 nd =        0 lat =      0 box =      0
+The outputs of all box instances are connected.

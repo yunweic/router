@@ -1,0 +1,8 @@
+.model test_circuit9
+.inputs x y z 
+.outputs e
+.gate nand2 a=x b=y O=a
+.gate nand2 a=x b=z O=b
+.gate nand3 a=a b=b c=y O=d
+.gate nand3 a=y b=d c=z O=e
+.end

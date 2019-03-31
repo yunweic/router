@@ -1,0 +1,4 @@
+The hierarhical design alu2.dual.sv contains 2 modules:
+alu4_cl                  : logicbox instantiated      0 times  pi =   10 po =   10 nd =      406 lat =      0 box =      6
+buf0                     : undefbox instantiated      6 times  pi =    0 po =    0 nd =        0 lat =      0 box =      0
+The outputs of all box instances are connected.

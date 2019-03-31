@@ -1,0 +1,5 @@
+The hierarhical design s27.dual.sv contains 3 modules:
+s27                      : logicbox instantiated      0 times  pi =    5 po =    5 nd =       12 lat =      0 box =      4
+buf0                     : undefbox instantiated      1 times  pi =    0 po =    0 nd =        0 lat =      0 box =      0
+dffx1                    : undefbox instantiated      3 times  pi =    0 po =    0 nd =        0 lat =      0 box =      0
+The outputs of all box instances are connected.

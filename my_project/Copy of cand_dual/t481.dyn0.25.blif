@@ -1,0 +1,55 @@
+.model t481
+.inputs v15 v14 v13 v12 v11 v10 v9 v8 v7 v6 v5 v4 v3 v2 v1 v0
+.outputs v160
+.default_input_arrival 0.00 0.00 
+.gate or2f A1=n53 A2=n49 Z=v160
+.gate and2 A1=n20 A2=v14 Z=n19
+.gate or2 A1=v12 A2=n22 Z=n21
+.gate and2 A1=n19 A2=n21 Z=n17
+.gate or2 A1=n21 A2=n19 Z=n18
+.gate inv1 I=v15 ZN=n20
+.gate inv1 I=v13 ZN=n22
+.gate and2f A1=n52 A2=n35 Z=n64
+.gate or2 A1=n39 A2=n41 Z=n66
+.gate or2f A1=n64 A2=n66 Z=n23
+.gate or2f A1=n64 A2=n66 Z=n63
+.gate inv1 I=n44 ZN=n26
+.gate and2 A1=n63 A2=n26 Z=n24
+.gate inv1 I=n24 ZN=n25
+.gate or2 A1=v11 A2=n43 Z=n44
+.gate inv1 I=v9 ZN=n27
+.gate or2 A1=v8 A2=n27 Z=n28
+.gate inv1 I=n28 ZN=n29
+.gate inv1f I=v2 ZN=n30
+.gate or2f A1=v3 A2=n30 Z=n31
+.gate inv1 I=n31 ZN=n32
+.gate inv1f I=v1 ZN=n33
+.gate or2f A1=v0 A2=n33 Z=n51
+.gate inv1 I=n51 ZN=n34
+.gate or2f A1=n31 A2=n34 Z=n35
+.gate inv1 I=v5 ZN=n36
+.gate inv1 I=v6 ZN=n37
+.gate or2 A1=v7 A2=n37 Z=n57
+.gate inv1 I=n57 ZN=n38
+.gate or2 A1=v4 A2=n36 Z=n65
+.gate and2 A1=n65 A2=n38 Z=n39
+.gate inv1 I=n65 ZN=n40
+.gate and2 A1=n40 A2=n57 Z=n41
+.gate inv1 I=n63 ZN=n42
+.gate inv1 I=v10 ZN=n43
+.gate and2f A1=n23 A2=n26 Z=n58
+.gate or2 A1=n29 A2=n58 Z=n45
+.gate inv1 I=n18 ZN=n46
+.gate and2 A1=n62 A2=n26 Z=n61
+.gate or2 A1=n23 A2=n61 Z=n47
+.gate or2 A1=n17 A2=n46 Z=n62
+.gate inv1 I=n62 ZN=n48
+.gate and2 A1=n23 A2=n48 Z=n49
+.gate and2f A1=n54 A2=n59 Z=n53
+.gate or2f A1=n32 A2=n51 Z=n52
+.gate or2f A1=n45 A2=n55 Z=n54
+.gate or2f A1=n28 A2=n60 Z=n59
+.gate and2f A1=n44 A2=n56 Z=n55
+.gate and2f A1=n42 A2=n62 Z=n56
+.gate and2f A1=n25 A2=n47 Z=n60
+.end

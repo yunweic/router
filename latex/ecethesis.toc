@@ -1,0 +1,34 @@
+\contentsline {chapter}{CHAPTER\ 1\hskip 1em\relax \MakeUppercase {Introduction}}{1}
+\contentsline {section}{\numberline {1.1}Minimum-Area Maximum-Length Routing}{2}
+\contentsline {section}{\numberline {1.2}Minimum-Length Maximum-Length Routing}{5}
+\contentsline {section}{\numberline {1.3}Finding the Actual Route}{6}
+\contentsline {section}{\numberline {1.4}Drawing the Actual Route}{9}
+\contentsline {section}{\numberline {1.5}Thesis Overview}{9}
+\contentsline {chapter}{CHAPTER\ 2\hskip 1em\relax \MakeUppercase {Introducing Left and Right Boundaries for the Grid}}{11}
+\contentsline {section}{\numberline {2.1}The Boundary File}{11}
+\contentsline {section}{\numberline {2.2}Generating the Boundary File}{11}
+\contentsline {section}{\numberline {2.3}Reading the Boundary File}{13}
+\contentsline {chapter}{CHAPTER\ 3\hskip 1em\relax \MakeUppercase {Minimum distance labeling with left and right boundaries}}{14}
+\contentsline {section}{\numberline {3.1}Problems with Each Net's Boundary}{14}
+\contentsline {section}{\numberline {3.2}Available Cells for Each Net}{15}
+\contentsline {section}{\numberline {3.3}Maze Routing for Minimum-Distance Label}{15}
+\contentsline {section}{\numberline {3.4}Decision for Grid Cell Relaxation}{17}
+\contentsline {subsection}{\numberline {3.4.1}Relaxing the lower cell}{17}
+\contentsline {subsection}{\numberline {3.4.2}Relaxing the right cell}{21}
+\contentsline {chapter}{CHAPTER\ 4\hskip 1em\relax \MakeUppercase {Wire Routing after minimum-distance labeling}}{26}
+\contentsline {section}{\numberline {4.1}Undesirable Zigzag of the Path}{26}
+\contentsline {section}{\numberline {4.2}Routing Nets Closer to Previous Net to Save More Area}{29}
+\contentsline {chapter}{CHAPTER\ 5\hskip 1em\relax \MakeUppercase {Wire Snaking with left and right boundaries}}{32}
+\contentsline {section}{\numberline {5.1}Adding One More Option for Middle Point for Wire Snaking}{32}
+\contentsline {section}{\numberline {5.2}Problems Caused by Having Two Middle Points}{34}
+\contentsline {chapter}{CHAPTER\ 6\hskip 1em\relax \MakeUppercase {Meeting the Maximum-Length Bound}}{39}
+\contentsline {section}{\numberline {6.1}Introducing Diagonal Wires}{39}
+\contentsline {section}{\numberline {6.2}The Number of Cells of Diagonal Wire}{40}
+\contentsline {section}{\numberline {6.3}Determining the Region for Diagonal Wire}{41}
+\contentsline {section}{\numberline {6.4}Satisfying the Maximum-Length Bound with the Diagonal Region}{44}
+\contentsline {section}{\numberline {6.5}Desired Length for Each Net}{45}
+\contentsline {chapter}{CHAPTER\ 7\hskip 1em\relax \MakeUppercase {Comparison}}{47}
+\contentsline {chapter}{CHAPTER\ 8\hskip 1em\relax \MakeUppercase {Conclusion}}{52}
+\contentsline {section}{\numberline {8.1}Summary}{52}
+\contentsline {section}{\numberline {8.2}Future Work}{53}
+\contentsline {chapter}{\MakeUppercase {REFERENCES}}{54}

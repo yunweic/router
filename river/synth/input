@@ -1,0 +1,16 @@
+# xsize ysize
+
+36 19
+
+# Each line below corresponds to a net
+# Format for one line is: <top_term_x> <bottom_term_x> <minL> <maxL>
+
+1 6 25 25
+2 12 30 30
+3 19 34 34
+4 24 50 50
+5 28 41 41
+6 30 74 75
+7 33 74 74
+8 34 44 44
+14 35 39 39

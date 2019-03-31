@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: ecethesis.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: boundary.aux
+A level-1 auxiliary file: labeling.aux
+A level-1 auxiliary file: routing.aux
+A level-1 auxiliary file: snaking.aux
+A level-1 auxiliary file: diagonal.aux
+A level-1 auxiliary file: result.aux
+A level-1 auxiliary file: concl.aux
+The style file: IEEE_ECE.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: thesisrefs.bib
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 8 entries,
+            4031 wiz_defined-function locations,
+            896 strings with 8885 characters,
+and the built_in function-call counts, 6252 in all, are:
+= -- 505
+> -- 105
+< -- 61
++ -- 68
+- -- 13
+* -- 301
+:= -- 930
+add.period$ -- 16
+call.type$ -- 8
+change.case$ -- 8
+chr.to.int$ -- 147
+cite$ -- 8
+duplicate$ -- 451
+empty$ -- 517
+format.name$ -- 17
+if$ -- 1452
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 66
+newline$ -- 47
+num.names$ -- 8
+pop$ -- 141
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 480
+stack$ -- 0
+substring$ -- 351
+swap$ -- 380
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 8
+warning$ -- 0
+while$ -- 29
+width$ -- 9
+write$ -- 98

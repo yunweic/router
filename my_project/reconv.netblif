@@ -1,0 +1,14 @@
+.model reconv_circuit
+.inputs a b c d
+.outputs m
+.gate inv1 a=a y=e
+.gate inv1 a=c y=f
+.gate and2 a=e b=b y=g
+.gate and2 a=f b=d y=h
+.gate inv1 a=g y=i
+.gate inv1 a=h y=j
+.gate and2 a=i b=h y=k
+.gate and2 a=j b=g y=l
+.gate and2 a=k b=l y=m
+.end
+

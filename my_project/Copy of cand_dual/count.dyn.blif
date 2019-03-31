@@ -1,0 +1,183 @@
+.model count
+.inputs j0 i0 h0 g0 f0 e0 d0 c0 b0 a0 z y x w v u s r q p o n m l k j i h g f \
+e d c b a
+.outputs z0 y0 x0 w0 v0 u0 t0 s0 r0 q0 p0 o0 n0 m0 l0 k0
+.default_input_arrival 0.00 0.00 
+.gate and2f A1=n140 A2=n141 Z=z0
+.gate or2f A1=n103 A2=s Z=y0
+.gate or2f A1=n99 A2=s Z=x0
+.gate or2 A1=n219 A2=n51 Z=w0
+.gate or2 A1=n217 A2=n52 Z=v0
+.gate or2 A1=n215 A2=n54 Z=u0
+.gate or2 A1=n213 A2=n57 Z=t0
+.gate or2 A1=n211 A2=n60 Z=s0
+.gate or2 A1=n209 A2=n63 Z=r0
+.gate or2 A1=n206 A2=n207 Z=q0
+.gate or2 A1=n203 A2=n204 Z=p0
+.gate or2 A1=n201 A2=n202 Z=o0
+.gate or2 A1=n199 A2=n200 Z=n0
+.gate or2 A1=n197 A2=n198 Z=m0
+.gate or2 A1=n195 A2=n196 Z=l0
+.gate or2 A1=n193 A2=n194 Z=k0
+.gate inv1f I=n93 ZN=n94
+.gate or2f A1=s A2=n94 Z=n51
+.gate and2 A1=q A2=n88 Z=n89
+.gate or2 A1=s A2=n89 Z=n52
+.gate inv1 I=n216 ZN=n215
+.gate or2 A1=s A2=n55 Z=n54
+.gate and2f A1=n56 A2=q Z=n55
+.gate and2f A1=n126 A2=n125 Z=n56
+.gate inv1 I=n84 ZN=n126
+.gate or2f A1=n82 A2=n188 Z=n125
+.gate and2 A1=q A2=n83 Z=n58
+.gate or2 A1=s A2=n58 Z=n57
+.gate or2 A1=n149 A2=n154 Z=n83
+.gate inv1 I=n212 ZN=n211
+.gate or2 A1=n61 A2=s Z=n60
+.gate and2 A1=n62 A2=q Z=n61
+.gate and2 A1=n124 A2=n123 Z=n62
+.gate inv1 I=n81 ZN=n124
+.gate or2 A1=n146 A2=n187 Z=n123
+.gate and2 A1=q A2=n80 Z=n64
+.gate or2 A1=s A2=n64 Z=n63
+.gate or2 A1=n147 A2=n152 Z=n80
+.gate or2 A1=n189 A2=n87 Z=n90
+.gate and2 A1=h0 A2=n90 Z=n65
+.gate or2f A1=n87 A2=n156 Z=n109
+.gate and2f A1=n109 A2=q Z=n66
+.gate or2f A1=u A2=r Z=n76
+.gate inv1 I=n76 ZN=n67
+.gate or2f A1=n145 A2=n79 Z=n111
+.gate inv1 I=n111 ZN=n68
+.gate or2f A1=n155 A2=n87 Z=n95
+.gate and2f A1=q A2=n95 Z=n69
+.gate or2f A1=n138 A2=n78 Z=n79
+.gate inv1 I=n79 ZN=n70
+.gate and2 A1=i0 A2=n95 Z=n71
+.gate and2 A1=a0 A2=n79 Z=n72
+.gate and2 A1=v A2=n76 Z=n73
+.gate or2 A1=n76 A2=v Z=n74
+.gate or2 A1=n76 A2=v Z=n75
+.gate or2 A1=v A2=w Z=n77
+.gate or2 A1=n77 A2=n76 Z=n78
+.gate or2f A1=z A2=n139 Z=n138
+.gate inv1 I=n144 ZN=n147
+.gate and2 A1=b0 A2=n153 Z=n152
+.gate inv1 I=c0 ZN=n187
+.gate or2 A1=n153 A2=b0 Z=n146
+.gate and2 A1=n187 A2=n146 Z=n81
+.gate or2f A1=n79 A2=n113 Z=n148
+.gate or2f A1=n148 A2=d0 Z=n82
+.gate inv1 I=n143 ZN=n149
+.gate and2 A1=d0 A2=n148 Z=n154
+.gate inv1 I=e0 ZN=n188
+.gate and2 A1=n82 A2=n188 Z=n84
+.gate or2 A1=n148 A2=n106 Z=n107
+.gate and2 A1=f0 A2=n107 Z=n85
+.gate or2 A1=d0 A2=e0 Z=n106
+.gate or2 A1=b0 A2=c0 Z=n151
+.gate or2f A1=n106 A2=n151 Z=n86
+.gate or2f A1=n86 A2=n79 Z=n87
+.gate or2 A1=n85 A2=n68 Z=n88
+.gate or2f A1=g0 A2=n157 Z=n189
+.gate and2f A1=g0 A2=n111 Z=n116
+.gate inv1f I=n116 ZN=n91
+.gate and2f A1=n90 A2=n91 Z=n92
+.gate inv1 I=q ZN=n178
+.gate or2f A1=n92 A2=n178 Z=n93
+.gate or2f A1=n189 A2=h0 Z=n155
+.gate inv1 I=n65 ZN=n96
+.gate and2f A1=n69 A2=n96 Z=n97
+.gate and2 A1=c A2=n178 Z=n132
+.gate or2f A1=n97 A2=n132 Z=n98
+.gate inv1f I=n98 ZN=n99
+.gate inv1 I=n71 ZN=n100
+.gate and2f A1=n66 A2=n100 Z=n101
+.gate and2 A1=b A2=n178 Z=n134
+.gate or2f A1=n101 A2=n134 Z=n102
+.gate inv1f I=n102 ZN=n103
+.gate inv1 I=j0 ZN=n190
+.gate and2 A1=n109 A2=n190 Z=n104
+.gate inv1 I=n104 ZN=n110
+.gate or2 A1=n109 A2=n190 Z=n108
+.gate and2f A1=n110 A2=n108 Z=n105
+.gate or2 A1=n155 A2=i0 Z=n156
+.gate or2f A1=n86 A2=n157 Z=n145
+.gate or2f A1=x A2=y Z=n139
+.gate or2 A1=n78 A2=n139 Z=n112
+.gate and2f A1=n114 A2=n115 Z=n150
+.gate inv1f I=n150 ZN=n113
+.gate inv1 I=a0 ZN=n114
+.gate inv1 I=n151 ZN=n115
+.gate and2f A1=n186 A2=n185 Z=n184
+.gate and2 A1=x A2=n137 Z=n172
+.gate or2 A1=n184 A2=n172 Z=n117
+.gate and2 A1=n121 A2=n120 Z=n119
+.gate and2 A1=n119 A2=q Z=n118
+.gate or2 A1=n184 A2=y Z=n121
+.gate or2f A1=n182 A2=n183 Z=n120
+.gate or2f A1=n137 A2=x Z=n182
+.gate inv1 I=y ZN=n183
+.gate and2 A1=z A2=n112 Z=n176
+.gate or2 A1=n176 A2=n70 Z=n122
+.gate inv1 I=n210 ZN=n209
+.gate inv1 I=n214 ZN=n213
+.gate inv1 I=n218 ZN=n217
+.gate inv1 I=n220 ZN=n219
+.gate or2 A1=n105 A2=n142 Z=n140
+.gate or2 A1=s A2=n221 Z=n141
+.gate or2f A1=n79 A2=a0 Z=n153
+.gate inv1 I=n153 ZN=n136
+.gate or2f A1=n77 A2=n76 Z=n137
+.gate or2 A1=n178 A2=s Z=n142
+.gate or2 A1=q A2=n179 Z=n221
+.gate or2f A1=n148 A2=d0 Z=n143
+.gate or2 A1=n153 A2=b0 Z=n144
+.gate or2f A1=a0 A2=f0 Z=n157
+.gate or2 A1=n67 A2=n160 Z=n159
+.gate and2 A1=q A2=n159 Z=n158
+.gate and2 A1=u A2=r Z=n160
+.gate or2 A1=q A2=p Z=n161
+.gate or2 A1=n164 A2=n73 Z=n163
+.gate and2 A1=q A2=n163 Z=n162
+.gate inv1 I=n75 ZN=n164
+.gate or2 A1=q A2=o Z=n165
+.gate and2 A1=n169 A2=n168 Z=n167
+.gate and2 A1=n167 A2=q Z=n166
+.gate inv1 I=n180 ZN=n169
+.gate or2 A1=n74 A2=n181 Z=n168
+.gate inv1 I=w ZN=n181
+.gate and2 A1=n181 A2=n75 Z=n180
+.gate or2 A1=q A2=n Z=n170
+.gate and2 A1=q A2=n117 Z=n171
+.gate or2 A1=q A2=m Z=n173
+.gate or2 A1=q A2=l Z=n174
+.gate and2 A1=q A2=n122 Z=n175
+.gate or2 A1=q A2=k Z=n177
+.gate inv1 I=a ZN=n179
+.gate inv1f I=n137 ZN=n186
+.gate inv1 I=x ZN=n185
+.gate or2 A1=n72 A2=n136 Z=n192
+.gate and2 A1=n192 A2=q Z=n191
+.gate inv1 I=n161 ZN=n193
+.gate or2 A1=s A2=n158 Z=n194
+.gate inv1 I=n165 ZN=n195
+.gate or2 A1=s A2=n162 Z=n196
+.gate inv1 I=n170 ZN=n197
+.gate or2 A1=s A2=n166 Z=n198
+.gate inv1 I=n173 ZN=n199
+.gate or2 A1=s A2=n171 Z=n200
+.gate inv1 I=n174 ZN=n201
+.gate or2 A1=s A2=n118 Z=n202
+.gate inv1 I=n177 ZN=n203
+.gate or2 A1=s A2=n175 Z=n204
+.gate inv1 I=n208 ZN=n206
+.gate or2 A1=s A2=n191 Z=n207
+.gate or2 A1=q A2=j Z=n208
+.gate or2 A1=q A2=i Z=n210
+.gate or2 A1=q A2=h Z=n212
+.gate or2 A1=q A2=g Z=n214
+.gate or2 A1=q A2=f Z=n216
+.gate or2 A1=q A2=e Z=n218
+.gate or2 A1=q A2=d Z=n220
+.end

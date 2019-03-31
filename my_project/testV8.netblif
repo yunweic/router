@@ -1,0 +1,8 @@
+.model test_circuit
+.inputs a b c 
+.outputs g
+.gate not1 a=b y=d
+.gate or2 a=a b=d y=e
+.gate not1 a=c y=f
+.gate and2 a=e b=f y=g
+.end

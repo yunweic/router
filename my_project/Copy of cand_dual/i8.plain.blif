@@ -1,0 +1,1146 @@
+# Benchmark "i8" written by ABC on Thu Dec 11 16:52:24 2008
+.model i8
+.inputs V118[0] V118[1] V122[0] V119[0] V121[16] V121[17] V51[0] V52[0] \
+ V50[0] V116[0] V116[1] V116[2] V116[3] V116[4] V116[5] V116[6] V116[7] \
+ V116[8] V116[9] V116[10] V116[11] V116[12] V116[13] V116[14] V116[15] \
+ V116[16] V116[17] V116[18] V116[19] V116[20] V116[21] V116[22] V116[23] \
+ V116[24] V116[25] V116[26] V116[27] V116[28] V116[29] V116[30] V116[31] \
+ V49[0] V48[0] V15[0] V15[1] V15[2] V15[3] V15[4] V15[5] V15[6] V15[7] \
+ V15[8] V15[9] V15[10] V15[11] V15[12] V15[13] V15[14] V84[0] V84[1] V84[2] \
+ V84[3] V84[4] V84[5] V84[6] V84[7] V84[8] V84[9] V84[10] V84[11] V84[12] \
+ V84[13] V84[14] V84[15] V84[16] V84[17] V84[18] V84[19] V84[20] V84[21] \
+ V84[22] V84[23] V84[24] V84[25] V84[26] V84[27] V84[28] V84[29] V84[30] \
+ V84[31] V47[0] V47[1] V47[2] V47[3] V47[4] V47[5] V47[6] V47[7] V47[8] \
+ V47[9] V47[10] V47[11] V47[12] V47[13] V47[14] V47[15] V47[16] V47[17] \
+ V47[18] V47[19] V47[20] V47[21] V47[22] V47[23] V47[24] V47[25] V47[26] \
+ V47[27] V47[28] V47[29] V47[30] V47[31] V133[0] V133[1] V133[2] V133[3] \
+ V133[4] V133[5] V133[6] V133[7] V133[8] V133[9] V133[10]
+.outputs V214[0] V213[0] V212[0] V212[1] V212[2] V212[3] V212[4] V212[5] \
+ V212[6] V212[7] V212[8] V212[9] V212[10] V212[11] V212[12] V212[13] \
+ V212[14] V197[0] V197[1] V197[2] V197[3] V197[4] V197[5] V197[6] V197[7] \
+ V197[8] V197[9] V197[10] V197[11] V197[12] V197[13] V197[14] V197[15] \
+ V197[16] V197[17] V197[18] V197[19] V197[20] V197[21] V197[22] V197[23] \
+ V197[24] V197[25] V197[26] V197[27] V197[28] V197[29] V197[30] V197[31] \
+ V165[0] V165[1] V165[2] V165[3] V165[4] V165[5] V165[6] V165[7] V165[8] \
+ V165[9] V165[10] V165[11] V165[12] V165[13] V165[14] V150[0] V149[0] \
+ V149[1] V149[2] V146[0] V145[0] V145[1] V143[0] V142[0] V142[1] V142[2] \
+ V142[3] V142[4] V142[5] V136[0] V136[1] V134[0]
+.default_input_arrival 0 0
+.gate or2   A1=n407 A2=n408 Z=V214[0]
+.gate and2  A1=V133[10] A2=V122[0] Z=n215
+.gate or2   A1=n404 A2=n217 Z=V213[0]
+.gate and2  A1=V121[16] A2=n400 Z=n217
+.gate or2   A1=n220 A2=n219 Z=V212[9]
+.gate or2   A1=n325 A2=n397 Z=n219
+.gate and2  A1=V84[26] A2=n348 Z=n220
+.gate or2   A1=n223 A2=n222 Z=V212[8]
+.gate or2   A1=n325 A2=n394 Z=n222
+.gate and2  A1=V84[25] A2=n348 Z=n223
+.gate or2   A1=n226 A2=n225 Z=V212[7]
+.gate or2   A1=n325 A2=n391 Z=n225
+.gate and2  A1=V84[24] A2=n348 Z=n226
+.gate or2   A1=n229 A2=n228 Z=V212[6]
+.gate or2   A1=n325 A2=n388 Z=n228
+.gate and2  A1=V84[23] A2=n348 Z=n229
+.gate or2   A1=n232 A2=n231 Z=V212[5]
+.gate or2   A1=n325 A2=n385 Z=n231
+.gate and2  A1=V84[22] A2=n348 Z=n232
+.gate or2   A1=n235 A2=n234 Z=V212[4]
+.gate or2   A1=n325 A2=n382 Z=n234
+.gate and2  A1=V84[21] A2=n348 Z=n235
+.gate or2   A1=n238 A2=n237 Z=V212[3]
+.gate or2   A1=n325 A2=n379 Z=n237
+.gate and2  A1=V84[20] A2=n348 Z=n238
+.gate or2   A1=n241 A2=n240 Z=V212[2]
+.gate or2   A1=n325 A2=n376 Z=n240
+.gate and2  A1=V84[19] A2=n348 Z=n241
+.gate or2   A1=n244 A2=n243 Z=V212[1]
+.gate or2   A1=n325 A2=n373 Z=n243
+.gate and2  A1=V84[18] A2=n348 Z=n244
+.gate or2   A1=n247 A2=n246 Z=V212[14]
+.gate or2   A1=n325 A2=n370 Z=n246
+.gate and2  A1=V84[31] A2=n348 Z=n247
+.gate or2   A1=n250 A2=n249 Z=V212[13]
+.gate or2   A1=n325 A2=n367 Z=n249
+.gate and2  A1=V84[30] A2=n348 Z=n250
+.gate or2   A1=n253 A2=n252 Z=V212[12]
+.gate or2   A1=n325 A2=n364 Z=n252
+.gate and2  A1=V84[29] A2=n348 Z=n253
+.gate or2   A1=n256 A2=n255 Z=V212[11]
+.gate or2   A1=n325 A2=n361 Z=n255
+.gate and2  A1=V84[28] A2=n348 Z=n256
+.gate or2   A1=n259 A2=n258 Z=V212[10]
+.gate or2   A1=n325 A2=n358 Z=n258
+.gate and2  A1=V84[27] A2=n348 Z=n259
+.gate or2   A1=n265 A2=n261 Z=V212[0]
+.gate or2   A1=n325 A2=n355 Z=n261
+.gate or2   A1=V118[0] A2=n280 Z=n262
+.gate or2   A1=V118[1] A2=n264 Z=n263
+.gate or2   A1=V133[2] A2=V133[1] Z=n264
+.gate and2  A1=V84[17] A2=n348 Z=n265
+.gate and2  A1=n1297 A2=n267 Z=n266
+.gate inv1  I=V118[0] ZN=n267
+.gate or2   A1=V133[10] A2=n1287 Z=n268
+.gate inv1  I=n270 ZN=n269
+.gate or2   A1=V133[7] A2=V133[3] Z=n270
+.gate and2  A1=n1305 A2=n342 Z=n271
+.gate or2   A1=V133[9] A2=V133[10] Z=n272
+.gate or2   A1=n275 A2=n274 Z=V134[0]
+.gate and2  A1=V48[0] A2=n340 Z=n274
+.gate and2  A1=n341 A2=n276 Z=n275
+.gate or2   A1=n279 A2=n277 Z=n276
+.gate and2  A1=V49[0] A2=n278 Z=n277
+.gate inv1  I=n280 ZN=n278
+.gate and2  A1=n337 A2=n280 Z=n279
+.gate or2   A1=V133[10] A2=n281 Z=n280
+.gate or2   A1=V133[9] A2=V133[7] Z=n281
+.gate and2  A1=V84[0] A2=V133[10] Z=n282
+.gate or2   A1=V116[0] A2=n1190 Z=n283
+.gate inv1  I=V133[9] ZN=n284
+.gate and2  A1=n454 A2=n1276 Z=n285
+.gate inv1  I=n1183 ZN=n286
+.gate and2  A1=n1270 A2=n874 Z=n287
+.gate inv1  I=n287 ZN=n288
+.gate and2  A1=n1240 A2=n1047 Z=n289
+.gate inv1  I=n289 ZN=n290
+.gate or2   A1=n1307 A2=V133[10] Z=n291
+.gate and2  A1=n295 A2=V47[7] Z=n292
+.gate and2  A1=n295 A2=V47[9] Z=n293
+.gate and2  A1=n295 A2=V47[10] Z=n294
+.gate inv1  I=n328 ZN=n295
+.gate and2  A1=n301 A2=V47[11] Z=n296
+.gate and2  A1=n295 A2=V47[12] Z=n297
+.gate and2  A1=n295 A2=V47[13] Z=n298
+.gate and2  A1=n301 A2=V47[14] Z=n299
+.gate and2  A1=n301 A2=V47[16] Z=n300
+.gate inv1  I=n1231 ZN=n301
+.gate inv1  I=n1322 ZN=n302
+.gate and2  A1=n1175 A2=V84[14] Z=n303
+.gate and2  A1=n1299 A2=V84[1] Z=n304
+.gate or2   A1=n1019 A2=n306 Z=n305
+.gate or2   A1=n333 A2=n1017 Z=n306
+.gate or2   A1=n1045 A2=n308 Z=n307
+.gate or2   A1=n333 A2=n1202 Z=n308
+.gate or2   A1=n1201 A2=n310 Z=n309
+.gate inv1  I=n972 ZN=n310
+.gate or2   A1=n312 A2=n313 Z=n311
+.gate inv1  I=n903 ZN=n312
+.gate inv1  I=n905 ZN=n313
+.gate and2  A1=n1175 A2=V84[11] Z=n314
+.gate inv1  I=n1250 ZN=n315
+.gate inv1  I=n409 ZN=n316
+.gate or2   A1=n318 A2=n319 Z=n317
+.gate inv1  I=n1218 ZN=n318
+.gate inv1  I=n941 ZN=n319
+.gate or2   A1=n321 A2=n322 Z=n320
+.gate inv1  I=n993 ZN=n321
+.gate inv1  I=n995 ZN=n322
+.gate or2   A1=n1307 A2=n418 Z=n323
+.gate inv1  I=n1278 ZN=n324
+.gate inv1  I=n351 ZN=n325
+.gate inv1  I=n537 ZN=n326
+.gate inv1  I=n537 ZN=n327
+.gate inv1  I=n1258 ZN=n328
+.gate inv1  I=n1330 ZN=n329
+.gate inv1  I=n352 ZN=n330
+.gate inv1  I=n1315 ZN=n331
+.gate inv1  I=n1274 ZN=n332
+.gate inv1  I=n1274 ZN=n333
+.gate inv1  I=n1274 ZN=n334
+.gate inv1  I=V133[10] ZN=n335
+.gate and2  A1=n283 A2=n335 Z=n336
+.gate or2   A1=n336 A2=n282 Z=n337
+.gate and2  A1=n1305 A2=n335 Z=n338
+.gate or2   A1=n1318 A2=n1306 Z=n339
+.gate and2  A1=n338 A2=n339 Z=n340
+.gate inv1  I=n340 ZN=n341
+.gate inv1  I=V133[8] ZN=n342
+.gate inv1  I=n1287 ZN=n343
+.gate or2   A1=n1172 A2=V133[5] Z=n344
+.gate and2  A1=n343 A2=n344 Z=n345
+.gate or2   A1=n345 A2=V133[2] Z=n346
+.gate inv1  I=n346 ZN=n347
+.gate or2   A1=n347 A2=V133[10] Z=n348
+.gate inv1  I=V133[5] ZN=n349
+.gate or2   A1=n349 A2=n263 Z=n350
+.gate or2   A1=n350 A2=n262 Z=n351
+.gate or2   A1=n1190 A2=V133[10] Z=n352
+.gate inv1  I=V116[0] ZN=n353
+.gate or2   A1=n352 A2=n353 Z=n354
+.gate inv1  I=n354 ZN=n355
+.gate inv1  I=V116[10] ZN=n356
+.gate or2   A1=n352 A2=n356 Z=n357
+.gate inv1  I=n357 ZN=n358
+.gate inv1  I=V116[11] ZN=n359
+.gate or2   A1=n352 A2=n359 Z=n360
+.gate inv1  I=n360 ZN=n361
+.gate inv1  I=V116[12] ZN=n362
+.gate or2   A1=n352 A2=n362 Z=n363
+.gate inv1  I=n363 ZN=n364
+.gate inv1  I=V116[13] ZN=n365
+.gate or2   A1=n352 A2=n365 Z=n366
+.gate inv1  I=n366 ZN=n367
+.gate inv1  I=V116[14] ZN=n368
+.gate or2   A1=n352 A2=n368 Z=n369
+.gate inv1  I=n369 ZN=n370
+.gate inv1  I=V116[1] ZN=n371
+.gate or2   A1=n352 A2=n371 Z=n372
+.gate inv1  I=n372 ZN=n373
+.gate inv1  I=V116[2] ZN=n374
+.gate or2   A1=n352 A2=n374 Z=n375
+.gate inv1  I=n375 ZN=n376
+.gate inv1  I=V116[3] ZN=n377
+.gate or2   A1=n352 A2=n377 Z=n378
+.gate inv1  I=n378 ZN=n379
+.gate inv1  I=V116[4] ZN=n380
+.gate or2   A1=n352 A2=n380 Z=n381
+.gate inv1  I=n381 ZN=n382
+.gate inv1  I=V116[5] ZN=n383
+.gate or2   A1=n352 A2=n383 Z=n384
+.gate inv1  I=n384 ZN=n385
+.gate inv1  I=V116[6] ZN=n386
+.gate or2   A1=n352 A2=n386 Z=n387
+.gate inv1  I=n387 ZN=n388
+.gate inv1  I=V116[7] ZN=n389
+.gate or2   A1=n352 A2=n389 Z=n390
+.gate inv1  I=n390 ZN=n391
+.gate inv1  I=V116[8] ZN=n392
+.gate or2   A1=n352 A2=n392 Z=n393
+.gate inv1  I=n393 ZN=n394
+.gate inv1  I=V116[9] ZN=n395
+.gate or2   A1=n352 A2=n395 Z=n396
+.gate inv1  I=n396 ZN=n397
+.gate inv1  I=n338 ZN=n398
+.gate or2   A1=n398 A2=V133[8] Z=n399
+.gate inv1  I=n399 ZN=n400
+.gate and2  A1=n352 A2=n315 Z=n401
+.gate or2   A1=n335 A2=V119[0] Z=n402
+.gate and2  A1=n399 A2=n402 Z=n403
+.gate and2  A1=n401 A2=n403 Z=n404
+.gate and2  A1=n1190 A2=n1250 Z=n405
+.gate or2   A1=n405 A2=n215 Z=n406
+.gate and2  A1=n398 A2=n406 Z=n407
+.gate and2  A1=V121[17] A2=n338 Z=n408
+.gate inv1  I=n1327 ZN=n409
+.gate inv1  I=n339 ZN=n410
+.gate and2  A1=n342 A2=n410 Z=n411
+.gate and2  A1=n409 A2=n411 Z=n412
+.gate or2   A1=n412 A2=V133[10] Z=n413
+.gate or2   A1=n413 A2=n271 Z=n414
+.gate or2   A1=V133[6] A2=V133[5] Z=n415
+.gate and2  A1=n342 A2=n415 Z=n416
+.gate or2   A1=n416 A2=n1306 Z=n417
+.gate inv1  I=V133[3] ZN=n418
+.gate inv1  I=V133[7] ZN=n419
+.gate and2  A1=n419 A2=V133[5] Z=n420
+.gate inv1  I=n1246 ZN=n421
+.gate and2  A1=V15[0] A2=n1294 Z=n422
+.gate and2  A1=n315 A2=n417 Z=n423
+.gate and2  A1=V84[1] A2=n1310 Z=n424
+.gate or2   A1=n422 A2=n424 Z=n425
+.gate and2  A1=n419 A2=n415 Z=n426
+.gate or2   A1=V133[1] A2=V133[2] Z=n427
+.gate or2   A1=n426 A2=n427 Z=n428
+.gate inv1  I=n428 ZN=n429
+.gate or2   A1=n1301 A2=n1276 Z=n430
+.gate or2   A1=n425 A2=n430 Z=n431
+.gate and2  A1=n414 A2=n431 Z=n432
+.gate and2  A1=V51[0] A2=n278 Z=n433
+.gate or2   A1=n342 A2=n272 Z=n434
+.gate and2  A1=n339 A2=n434 Z=n435
+.gate and2  A1=n433 A2=n435 Z=n436
+.gate inv1  I=n272 ZN=n437
+.gate and2  A1=V50[0] A2=V133[8] Z=n438
+.gate and2  A1=n437 A2=n438 Z=n439
+.gate or2   A1=n439 A2=n373 Z=n440
+.gate or2   A1=n436 A2=n440 Z=n441
+.gate or2   A1=n432 A2=n441 Z=V136[0]
+.gate or2   A1=n1247 A2=n1276 Z=n443
+.gate and2  A1=V84[2] A2=n1310 Z=n444
+.gate or2   A1=n444 A2=n1186 Z=n445
+.gate or2   A1=n443 A2=n445 Z=n446
+.gate and2  A1=n414 A2=n446 Z=n447
+.gate and2  A1=V52[0] A2=n278 Z=n448
+.gate and2  A1=n339 A2=n448 Z=n449
+.gate or2   A1=n376 A2=n449 Z=n450
+.gate and2  A1=n434 A2=n450 Z=n451
+.gate or2   A1=n447 A2=n451 Z=V136[1]
+.gate inv1  I=n1173 ZN=n453
+.gate or2   A1=n1304 A2=n453 Z=n454
+.gate and2  A1=V15[2] A2=n1294 Z=n455
+.gate and2  A1=V47[3] A2=n1323 Z=n456
+.gate and2  A1=V84[3] A2=n1310 Z=n457
+.gate or2   A1=n456 A2=n457 Z=n458
+.gate or2   A1=n455 A2=n458 Z=n459
+.gate or2   A1=n285 A2=n379 Z=n460
+.gate or2   A1=n1249 A2=n460 Z=V142[0]
+.gate and2  A1=V15[3] A2=n1294 Z=n462
+.gate or2   A1=n1213 A2=n1166 Z=n463
+.gate or2   A1=n462 A2=n463 Z=n464
+.gate and2  A1=n454 A2=n464 Z=n465
+.gate or2   A1=n285 A2=n382 Z=n466
+.gate and2  A1=V15[4] A2=n1294 Z=n467
+.gate or2   A1=n1302 A2=n1165 Z=n468
+.gate or2   A1=n467 A2=n468 Z=n469
+.gate and2  A1=n454 A2=n469 Z=n470
+.gate or2   A1=n285 A2=n385 Z=n471
+.gate or2   A1=n470 A2=n471 Z=V142[2]
+.gate and2  A1=V15[5] A2=n1294 Z=n473
+.gate and2  A1=n1323 A2=V47[6] Z=n474
+.gate and2  A1=V84[6] A2=n1310 Z=n475
+.gate or2   A1=n474 A2=n475 Z=n476
+.gate or2   A1=n473 A2=n476 Z=n477
+.gate or2   A1=n285 A2=n388 Z=n478
+.gate or2   A1=n1242 A2=n478 Z=V142[3]
+.gate and2  A1=V15[6] A2=n1294 Z=n480
+.gate and2  A1=V47[7] A2=n1323 Z=n481
+.gate and2  A1=V84[7] A2=n1310 Z=n482
+.gate or2   A1=n481 A2=n482 Z=n483
+.gate or2   A1=n285 A2=n391 Z=n484
+.gate or2   A1=n1205 A2=n484 Z=V142[4]
+.gate and2  A1=n1261 A2=V47[0] Z=n486
+.gate and2  A1=V84[8] A2=n1310 Z=n487
+.gate or2   A1=n1191 A2=n487 Z=n488
+.gate and2  A1=V15[7] A2=n1294 Z=n489
+.gate and2  A1=V47[8] A2=n324 Z=n490
+.gate or2   A1=n489 A2=n490 Z=n491
+.gate or2   A1=n488 A2=n491 Z=n492
+.gate or2   A1=n394 A2=n1169 Z=V142[5]
+.gate or2   A1=n409 A2=n1304 Z=n494
+.gate or2   A1=n1192 A2=n1167 Z=n495
+.gate and2  A1=V15[8] A2=n1294 Z=n496
+.gate and2  A1=V47[9] A2=n324 Z=n497
+.gate or2   A1=n496 A2=n497 Z=n498
+.gate or2   A1=n495 A2=n498 Z=n499
+.gate and2  A1=n494 A2=n499 Z=n500
+.gate and2  A1=n1261 A2=V47[2] Z=n501
+.gate and2  A1=V84[10] A2=n1310 Z=n502
+.gate or2   A1=n1193 A2=n502 Z=n503
+.gate and2  A1=V15[9] A2=n1294 Z=n504
+.gate and2  A1=V47[10] A2=n324 Z=n505
+.gate or2   A1=n504 A2=n505 Z=n506
+.gate and2  A1=n454 A2=n1170 Z=n507
+.gate or2   A1=n358 A2=n507 Z=V145[0]
+.gate and2  A1=n1261 A2=V47[3] Z=n509
+.gate and2  A1=V84[11] A2=n1310 Z=n510
+.gate or2   A1=n1179 A2=n510 Z=n511
+.gate and2  A1=V15[10] A2=n1294 Z=n512
+.gate and2  A1=V47[11] A2=n324 Z=n513
+.gate or2   A1=n512 A2=n513 Z=n514
+.gate or2   A1=n361 A2=n1206 Z=V145[1]
+.gate and2  A1=n1261 A2=V47[4] Z=n516
+.gate or2   A1=n1276 A2=n516 Z=n517
+.gate and2  A1=V47[1] A2=n1310 Z=n518
+.gate or2   A1=n517 A2=n518 Z=n519
+.gate and2  A1=V15[11] A2=n1294 Z=n520
+.gate and2  A1=V47[12] A2=n324 Z=n521
+.gate or2   A1=n520 A2=n521 Z=n522
+.gate or2   A1=n316 A2=n418 Z=n523
+.gate inv1  I=n523 ZN=n524
+.gate inv1  I=n1248 ZN=n525
+.gate or2   A1=n316 A2=V133[1] Z=n526
+.gate inv1  I=n526 ZN=n527
+.gate or2   A1=n1290 A2=n527 Z=n528
+.gate and2  A1=V84[12] A2=n269 Z=n529
+.gate and2  A1=n1250 A2=n529 Z=n530
+.gate inv1  I=V133[4] ZN=n531
+.gate and2  A1=n531 A2=n352 Z=n532
+.gate and2  A1=n530 A2=n532 Z=n533
+.gate or2   A1=n364 A2=n533 Z=n534
+.gate or2   A1=n1207 A2=n534 Z=V146[0]
+.gate inv1  I=n1172 ZN=n536
+.gate or2   A1=n1328 A2=n1277 Z=n537
+.gate or2   A1=n367 A2=n326 Z=n538
+.gate and2  A1=n295 A2=V47[5] Z=n539
+.gate and2  A1=V47[2] A2=n1177 Z=n540
+.gate or2   A1=n539 A2=n540 Z=n541
+.gate or2   A1=n538 A2=n541 Z=n542
+.gate and2  A1=V15[12] A2=n1311 Z=n543
+.gate and2  A1=n1330 A2=V47[13] Z=n544
+.gate or2   A1=n543 A2=n544 Z=n545
+.gate or2   A1=n316 A2=n270 Z=n546
+.gate or2   A1=n546 A2=n315 Z=n547
+.gate inv1  I=n547 ZN=n548
+.gate and2  A1=V84[13] A2=n548 Z=n549
+.gate or2   A1=n545 A2=n549 Z=n550
+.gate or2   A1=n542 A2=n550 Z=V149[0]
+.gate or2   A1=n370 A2=n327 Z=n552
+.gate and2  A1=n295 A2=V47[6] Z=n553
+.gate or2   A1=n553 A2=n1194 Z=n554
+.gate or2   A1=n552 A2=n554 Z=n555
+.gate and2  A1=V15[13] A2=n1311 Z=n556
+.gate and2  A1=n1330 A2=V47[14] Z=n557
+.gate or2   A1=n556 A2=n557 Z=n558
+.gate and2  A1=V84[14] A2=n548 Z=n559
+.gate or2   A1=n558 A2=n559 Z=n560
+.gate or2   A1=n555 A2=n560 Z=V149[1]
+.gate inv1  I=V47[15] ZN=n562
+.gate inv1  I=V84[15] ZN=n563
+.gate or2   A1=n547 A2=n563 Z=n564
+.gate and2  A1=n1195 A2=n564 Z=n565
+.gate inv1  I=V116[15] ZN=n566
+.gate or2   A1=n352 A2=n566 Z=n567
+.gate and2  A1=n565 A2=n567 Z=n568
+.gate inv1  I=n568 ZN=n569
+.gate and2  A1=V15[14] A2=n1311 Z=n570
+.gate and2  A1=V47[4] A2=n1177 Z=n571
+.gate or2   A1=n570 A2=n571 Z=n572
+.gate or2   A1=n292 A2=n326 Z=n573
+.gate or2   A1=n572 A2=n573 Z=n574
+.gate or2   A1=n569 A2=n574 Z=V149[2]
+.gate and2  A1=V84[16] A2=n269 Z=n576
+.gate and2  A1=n531 A2=n1250 Z=n577
+.gate and2  A1=n576 A2=n577 Z=n578
+.gate or2   A1=n330 A2=n578 Z=n579
+.gate or2   A1=V116[16] A2=n352 Z=n580
+.gate and2  A1=n579 A2=n580 Z=n581
+.gate or2   A1=V133[2] A2=n526 Z=n582
+.gate and2  A1=n582 A2=n1328 Z=n583
+.gate inv1  I=n583 ZN=n584
+.gate or2   A1=n1276 A2=n1162 Z=n585
+.gate or2   A1=n585 A2=n1168 Z=n586
+.gate and2  A1=V47[1] A2=n1294 Z=n587
+.gate and2  A1=V47[16] A2=n324 Z=n588
+.gate or2   A1=n587 A2=n588 Z=n589
+.gate or2   A1=n586 A2=n589 Z=n590
+.gate and2  A1=n584 A2=n590 Z=n591
+.gate inv1  I=V47[17] ZN=n592
+.gate inv1  I=V84[17] ZN=n593
+.gate or2   A1=n547 A2=n593 Z=n594
+.gate and2  A1=n1196 A2=n594 Z=n595
+.gate inv1  I=V116[17] ZN=n596
+.gate or2   A1=n352 A2=n596 Z=n597
+.gate and2  A1=n595 A2=n597 Z=n598
+.gate inv1  I=n598 ZN=n599
+.gate and2  A1=V47[2] A2=n1311 Z=n600
+.gate and2  A1=V47[6] A2=n1177 Z=n601
+.gate or2   A1=n600 A2=n601 Z=n602
+.gate or2   A1=n293 A2=n326 Z=n603
+.gate or2   A1=n602 A2=n603 Z=n604
+.gate or2   A1=n599 A2=n604 Z=V165[0]
+.gate inv1  I=V47[18] ZN=n606
+.gate or2   A1=n1187 A2=n606 Z=n607
+.gate inv1  I=V84[18] ZN=n608
+.gate or2   A1=n547 A2=n608 Z=n609
+.gate and2  A1=n607 A2=n609 Z=n610
+.gate inv1  I=V116[18] ZN=n611
+.gate or2   A1=n352 A2=n611 Z=n612
+.gate and2  A1=n610 A2=n612 Z=n613
+.gate inv1  I=n613 ZN=n614
+.gate and2  A1=V47[3] A2=n1311 Z=n615
+.gate and2  A1=V47[7] A2=n1286 Z=n616
+.gate or2   A1=n615 A2=n616 Z=n617
+.gate or2   A1=n294 A2=n327 Z=n618
+.gate or2   A1=n617 A2=n618 Z=n619
+.gate or2   A1=n614 A2=n619 Z=V165[1]
+.gate inv1  I=V47[19] ZN=n621
+.gate or2   A1=n1150 A2=n621 Z=n622
+.gate inv1  I=V84[19] ZN=n623
+.gate or2   A1=n547 A2=n623 Z=n624
+.gate and2  A1=n622 A2=n624 Z=n625
+.gate inv1  I=V116[19] ZN=n626
+.gate or2   A1=n352 A2=n626 Z=n627
+.gate and2  A1=n625 A2=n627 Z=n628
+.gate inv1  I=n628 ZN=n629
+.gate and2  A1=V47[4] A2=n1311 Z=n630
+.gate and2  A1=V47[8] A2=n1286 Z=n631
+.gate or2   A1=n630 A2=n631 Z=n632
+.gate or2   A1=n296 A2=n327 Z=n633
+.gate or2   A1=n632 A2=n633 Z=n634
+.gate or2   A1=n629 A2=n634 Z=V165[2]
+.gate inv1  I=V47[20] ZN=n636
+.gate inv1  I=V84[20] ZN=n637
+.gate or2   A1=n547 A2=n637 Z=n638
+.gate and2  A1=n1197 A2=n638 Z=n639
+.gate inv1  I=V116[20] ZN=n640
+.gate or2   A1=n352 A2=n640 Z=n641
+.gate and2  A1=n639 A2=n641 Z=n642
+.gate inv1  I=n642 ZN=n643
+.gate and2  A1=V47[5] A2=n1311 Z=n644
+.gate and2  A1=V47[9] A2=n1177 Z=n645
+.gate or2   A1=n644 A2=n645 Z=n646
+.gate or2   A1=n297 A2=n326 Z=n647
+.gate or2   A1=n646 A2=n647 Z=n648
+.gate or2   A1=n643 A2=n648 Z=V165[3]
+.gate inv1  I=V47[21] ZN=n650
+.gate or2   A1=n1187 A2=n650 Z=n651
+.gate inv1  I=V84[21] ZN=n652
+.gate or2   A1=n547 A2=n652 Z=n653
+.gate and2  A1=n651 A2=n653 Z=n654
+.gate inv1  I=V116[21] ZN=n655
+.gate or2   A1=n352 A2=n655 Z=n656
+.gate and2  A1=n654 A2=n656 Z=n657
+.gate inv1  I=n657 ZN=n658
+.gate and2  A1=V47[6] A2=n1311 Z=n659
+.gate and2  A1=V47[10] A2=n1286 Z=n660
+.gate or2   A1=n659 A2=n660 Z=n661
+.gate or2   A1=n298 A2=n327 Z=n662
+.gate or2   A1=n661 A2=n662 Z=n663
+.gate or2   A1=n658 A2=n663 Z=V165[4]
+.gate inv1  I=V47[22] ZN=n665
+.gate or2   A1=n1150 A2=n665 Z=n666
+.gate inv1  I=V84[22] ZN=n667
+.gate or2   A1=n547 A2=n667 Z=n668
+.gate and2  A1=n666 A2=n668 Z=n669
+.gate inv1  I=V116[22] ZN=n670
+.gate or2   A1=n352 A2=n670 Z=n671
+.gate and2  A1=n669 A2=n671 Z=n672
+.gate inv1  I=n672 ZN=n673
+.gate and2  A1=V47[7] A2=n1311 Z=n674
+.gate and2  A1=V47[11] A2=n1177 Z=n675
+.gate or2   A1=n674 A2=n675 Z=n676
+.gate or2   A1=n299 A2=n327 Z=n677
+.gate or2   A1=n676 A2=n677 Z=n678
+.gate or2   A1=n673 A2=n678 Z=V165[5]
+.gate inv1  I=V47[23] ZN=n680
+.gate or2   A1=n1187 A2=n680 Z=n681
+.gate inv1  I=V84[23] ZN=n682
+.gate or2   A1=n547 A2=n682 Z=n683
+.gate and2  A1=n681 A2=n683 Z=n684
+.gate inv1  I=V116[23] ZN=n685
+.gate or2   A1=n352 A2=n685 Z=n686
+.gate and2  A1=n684 A2=n686 Z=n687
+.gate inv1  I=n687 ZN=n688
+.gate and2  A1=V47[8] A2=n1311 Z=n689
+.gate and2  A1=V47[12] A2=n1177 Z=n690
+.gate or2   A1=n689 A2=n690 Z=n691
+.gate or2   A1=n1231 A2=n562 Z=n692
+.gate inv1  I=n692 ZN=n693
+.gate or2   A1=n693 A2=n326 Z=n694
+.gate or2   A1=n691 A2=n694 Z=n695
+.gate or2   A1=n688 A2=n695 Z=V165[6]
+.gate inv1  I=V47[24] ZN=n697
+.gate or2   A1=n1150 A2=n697 Z=n698
+.gate inv1  I=V84[24] ZN=n699
+.gate or2   A1=n547 A2=n699 Z=n700
+.gate and2  A1=n698 A2=n700 Z=n701
+.gate inv1  I=V116[24] ZN=n702
+.gate or2   A1=n352 A2=n702 Z=n703
+.gate and2  A1=n701 A2=n703 Z=n704
+.gate inv1  I=n704 ZN=n705
+.gate and2  A1=V47[9] A2=n1311 Z=n706
+.gate and2  A1=V47[13] A2=n1286 Z=n707
+.gate or2   A1=n706 A2=n707 Z=n708
+.gate or2   A1=n300 A2=n327 Z=n709
+.gate or2   A1=n708 A2=n709 Z=n710
+.gate or2   A1=n705 A2=n710 Z=V165[7]
+.gate inv1  I=V47[25] ZN=n712
+.gate or2   A1=n1150 A2=n712 Z=n713
+.gate inv1  I=V84[25] ZN=n714
+.gate or2   A1=n547 A2=n714 Z=n715
+.gate and2  A1=n713 A2=n715 Z=n716
+.gate inv1  I=V116[25] ZN=n717
+.gate or2   A1=n352 A2=n717 Z=n718
+.gate and2  A1=n716 A2=n718 Z=n719
+.gate inv1  I=n719 ZN=n720
+.gate and2  A1=V47[10] A2=n1311 Z=n721
+.gate and2  A1=V47[14] A2=n1177 Z=n722
+.gate or2   A1=n721 A2=n722 Z=n723
+.gate or2   A1=n1231 A2=n592 Z=n724
+.gate inv1  I=n724 ZN=n725
+.gate or2   A1=n725 A2=n326 Z=n726
+.gate or2   A1=n723 A2=n726 Z=n727
+.gate or2   A1=n720 A2=n727 Z=V165[8]
+.gate inv1  I=V47[26] ZN=n729
+.gate inv1  I=V84[26] ZN=n730
+.gate or2   A1=n547 A2=n730 Z=n731
+.gate and2  A1=n1198 A2=n731 Z=n732
+.gate inv1  I=V116[26] ZN=n733
+.gate or2   A1=n352 A2=n733 Z=n734
+.gate and2  A1=n732 A2=n734 Z=n735
+.gate inv1  I=n735 ZN=n736
+.gate and2  A1=V47[11] A2=n1311 Z=n737
+.gate and2  A1=V47[15] A2=n1177 Z=n738
+.gate or2   A1=n737 A2=n738 Z=n739
+.gate or2   A1=n1233 A2=n606 Z=n740
+.gate inv1  I=n740 ZN=n741
+.gate or2   A1=n741 A2=n326 Z=n742
+.gate or2   A1=n739 A2=n742 Z=n743
+.gate or2   A1=n736 A2=n743 Z=V165[9]
+.gate inv1  I=V47[27] ZN=n745
+.gate or2   A1=n1187 A2=n745 Z=n746
+.gate inv1  I=V84[27] ZN=n747
+.gate or2   A1=n547 A2=n747 Z=n748
+.gate and2  A1=n746 A2=n748 Z=n749
+.gate inv1  I=V116[27] ZN=n750
+.gate or2   A1=n352 A2=n750 Z=n751
+.gate and2  A1=n749 A2=n751 Z=n752
+.gate inv1  I=n752 ZN=n753
+.gate and2  A1=V47[12] A2=n1311 Z=n754
+.gate and2  A1=V47[16] A2=n1286 Z=n755
+.gate or2   A1=n754 A2=n755 Z=n756
+.gate or2   A1=n1233 A2=n621 Z=n757
+.gate inv1  I=n757 ZN=n758
+.gate or2   A1=n758 A2=n327 Z=n759
+.gate or2   A1=n756 A2=n759 Z=n760
+.gate or2   A1=n753 A2=n760 Z=V165[10]
+.gate inv1  I=V47[28] ZN=n762
+.gate or2   A1=n1187 A2=n762 Z=n763
+.gate inv1  I=V84[28] ZN=n764
+.gate or2   A1=n547 A2=n764 Z=n765
+.gate and2  A1=n763 A2=n765 Z=n766
+.gate inv1  I=V116[28] ZN=n767
+.gate or2   A1=n352 A2=n767 Z=n768
+.gate and2  A1=n766 A2=n768 Z=n769
+.gate inv1  I=n769 ZN=n770
+.gate and2  A1=V47[13] A2=n1311 Z=n771
+.gate and2  A1=V47[17] A2=n1286 Z=n772
+.gate or2   A1=n771 A2=n772 Z=n773
+.gate or2   A1=n1233 A2=n636 Z=n774
+.gate inv1  I=n774 ZN=n775
+.gate or2   A1=n775 A2=n327 Z=n776
+.gate or2   A1=n773 A2=n776 Z=n777
+.gate or2   A1=n770 A2=n777 Z=V165[11]
+.gate inv1  I=V47[29] ZN=n779
+.gate or2   A1=n1150 A2=n779 Z=n780
+.gate inv1  I=V84[29] ZN=n781
+.gate or2   A1=n547 A2=n781 Z=n782
+.gate and2  A1=n780 A2=n782 Z=n783
+.gate inv1  I=V116[29] ZN=n784
+.gate or2   A1=n352 A2=n784 Z=n785
+.gate and2  A1=n783 A2=n785 Z=n786
+.gate inv1  I=n786 ZN=n787
+.gate and2  A1=V47[14] A2=n1311 Z=n788
+.gate and2  A1=V47[18] A2=n1177 Z=n789
+.gate or2   A1=n788 A2=n789 Z=n790
+.gate or2   A1=n1233 A2=n650 Z=n791
+.gate inv1  I=n791 ZN=n792
+.gate or2   A1=n792 A2=n326 Z=n793
+.gate or2   A1=n790 A2=n793 Z=n794
+.gate or2   A1=n787 A2=n794 Z=V165[12]
+.gate inv1  I=V47[30] ZN=n796
+.gate inv1  I=V84[30] ZN=n797
+.gate or2   A1=n547 A2=n797 Z=n798
+.gate and2  A1=n1181 A2=n798 Z=n799
+.gate inv1  I=V116[30] ZN=n800
+.gate or2   A1=n352 A2=n800 Z=n801
+.gate and2  A1=n799 A2=n801 Z=n802
+.gate and2  A1=V47[15] A2=n1311 Z=n803
+.gate and2  A1=V47[19] A2=n1286 Z=n804
+.gate or2   A1=n803 A2=n804 Z=n805
+.gate or2   A1=n1231 A2=n665 Z=n806
+.gate inv1  I=n806 ZN=n807
+.gate or2   A1=n807 A2=n327 Z=n808
+.gate or2   A1=n805 A2=n808 Z=n809
+.gate or2   A1=n1209 A2=n809 Z=V165[13]
+.gate and2  A1=V84[31] A2=n548 Z=n811
+.gate inv1  I=V116[31] ZN=n812
+.gate or2   A1=n352 A2=n812 Z=n813
+.gate inv1  I=n813 ZN=n814
+.gate or2   A1=n811 A2=n814 Z=n815
+.gate or2   A1=n815 A2=n326 Z=n816
+.gate inv1  I=V47[31] ZN=n817
+.gate or2   A1=n1150 A2=n817 Z=n818
+.gate inv1  I=n818 ZN=n819
+.gate and2  A1=V47[20] A2=n1286 Z=n820
+.gate or2   A1=n328 A2=n680 Z=n821
+.gate inv1  I=n821 ZN=n822
+.gate or2   A1=n820 A2=n822 Z=n823
+.gate or2   A1=n1176 A2=n823 Z=n824
+.gate or2   A1=n816 A2=n824 Z=V165[14]
+.gate or2   A1=n1178 A2=V133[0] Z=n826
+.gate inv1  I=n266 ZN=n827
+.gate inv1  I=n268 ZN=n828
+.gate inv1  I=V84[0] ZN=n829
+.gate or2   A1=n1220 A2=n829 Z=n830
+.gate and2  A1=n1244 A2=n830 Z=n831
+.gate inv1  I=n831 ZN=n832
+.gate or2   A1=n832 A2=n355 Z=n833
+.gate and2  A1=V47[21] A2=n331 Z=n834
+.gate or2   A1=n1230 A2=n697 Z=n835
+.gate inv1  I=n835 ZN=n836
+.gate or2   A1=n836 A2=n334 Z=n837
+.gate or2   A1=n837 A2=n834 Z=n838
+.gate or2   A1=n833 A2=n838 Z=V197[0]
+.gate inv1  I=V84[1] ZN=n840
+.gate or2   A1=n1222 A2=n840 Z=n841
+.gate and2  A1=n1269 A2=n841 Z=n842
+.gate inv1  I=n842 ZN=n843
+.gate or2   A1=n843 A2=n373 Z=n844
+.gate and2  A1=V47[22] A2=n331 Z=n845
+.gate or2   A1=n1230 A2=n712 Z=n846
+.gate inv1  I=n846 ZN=n847
+.gate or2   A1=n847 A2=n333 Z=n848
+.gate or2   A1=n848 A2=n845 Z=n849
+.gate or2   A1=n844 A2=n849 Z=V197[1]
+.gate inv1  I=V84[2] ZN=n851
+.gate or2   A1=n1223 A2=n851 Z=n852
+.gate and2  A1=n1266 A2=n852 Z=n853
+.gate inv1  I=n853 ZN=n854
+.gate or2   A1=n854 A2=n376 Z=n855
+.gate and2  A1=V47[23] A2=n1149 Z=n856
+.gate or2   A1=n1229 A2=n729 Z=n857
+.gate inv1  I=n857 ZN=n858
+.gate or2   A1=n858 A2=n332 Z=n859
+.gate or2   A1=n859 A2=n856 Z=n860
+.gate or2   A1=n855 A2=n860 Z=V197[2]
+.gate or2   A1=n1264 A2=n636 Z=n862
+.gate inv1  I=V84[3] ZN=n863
+.gate or2   A1=n1189 A2=n863 Z=n864
+.gate and2  A1=n862 A2=n864 Z=n865
+.gate or2   A1=n1243 A2=n379 Z=n866
+.gate and2  A1=V47[24] A2=n331 Z=n867
+.gate or2   A1=n1225 A2=n745 Z=n868
+.gate inv1  I=n868 ZN=n869
+.gate or2   A1=n869 A2=n334 Z=n870
+.gate or2   A1=n870 A2=n867 Z=n871
+.gate or2   A1=n866 A2=n871 Z=V197[3]
+.gate inv1  I=V84[4] ZN=n873
+.gate or2   A1=n1221 A2=n873 Z=n874
+.gate or2   A1=n288 A2=n382 Z=n875
+.gate and2  A1=V47[25] A2=n331 Z=n876
+.gate or2   A1=n1228 A2=n762 Z=n877
+.gate inv1  I=n877 ZN=n878
+.gate or2   A1=n878 A2=n333 Z=n879
+.gate or2   A1=n879 A2=n876 Z=n880
+.gate or2   A1=n875 A2=n880 Z=V197[4]
+.gate inv1  I=V84[5] ZN=n882
+.gate or2   A1=n1221 A2=n882 Z=n883
+.gate and2  A1=n1268 A2=n883 Z=n884
+.gate inv1  I=n884 ZN=n885
+.gate or2   A1=n885 A2=n385 Z=n886
+.gate and2  A1=V47[26] A2=n331 Z=n887
+.gate or2   A1=n1229 A2=n779 Z=n888
+.gate inv1  I=n888 ZN=n889
+.gate or2   A1=n889 A2=n334 Z=n890
+.gate or2   A1=n890 A2=n887 Z=n891
+.gate or2   A1=n886 A2=n891 Z=V197[5]
+.gate inv1  I=V84[6] ZN=n893
+.gate or2   A1=n1222 A2=n893 Z=n894
+.gate inv1  I=n1211 ZN=n895
+.gate or2   A1=n895 A2=n388 Z=n896
+.gate and2  A1=V47[27] A2=n331 Z=n897
+.gate or2   A1=n1226 A2=n796 Z=n898
+.gate inv1  I=n898 ZN=n899
+.gate or2   A1=n899 A2=n332 Z=n900
+.gate or2   A1=n900 A2=n897 Z=n901
+.gate or2   A1=n896 A2=n901 Z=V197[6]
+.gate or2   A1=n1264 A2=n697 Z=n903
+.gate inv1  I=V84[7] ZN=n904
+.gate or2   A1=n1223 A2=n904 Z=n905
+.gate or2   A1=n311 A2=n391 Z=n906
+.gate and2  A1=V47[28] A2=n1151 Z=n907
+.gate or2   A1=n1230 A2=n817 Z=n908
+.gate inv1  I=n908 ZN=n909
+.gate or2   A1=n909 A2=n334 Z=n910
+.gate or2   A1=n910 A2=n907 Z=n911
+.gate or2   A1=n906 A2=n911 Z=V197[7]
+.gate or2   A1=n1232 A2=n712 Z=n913
+.gate inv1  I=V84[8] ZN=n914
+.gate or2   A1=n1221 A2=n914 Z=n915
+.gate or2   A1=n1210 A2=n394 Z=n916
+.gate and2  A1=V47[29] A2=n1151 Z=n917
+.gate or2   A1=n1228 A2=n829 Z=n918
+.gate inv1  I=n918 ZN=n919
+.gate or2   A1=n919 A2=n333 Z=n920
+.gate or2   A1=n920 A2=n917 Z=n921
+.gate or2   A1=n916 A2=n921 Z=V197[8]
+.gate inv1  I=V84[9] ZN=n923
+.gate or2   A1=n1220 A2=n923 Z=n924
+.gate or2   A1=n1200 A2=n397 Z=n925
+.gate and2  A1=V47[30] A2=n331 Z=n926
+.gate or2   A1=n304 A2=n332 Z=n927
+.gate or2   A1=n927 A2=n926 Z=n928
+.gate or2   A1=n925 A2=n928 Z=V197[9]
+.gate inv1  I=V84[10] ZN=n930
+.gate or2   A1=n1189 A2=n930 Z=n931
+.gate inv1  I=n1174 ZN=n932
+.gate or2   A1=n932 A2=n358 Z=n933
+.gate and2  A1=V47[31] A2=n1151 Z=n934
+.gate or2   A1=n1226 A2=n851 Z=n935
+.gate inv1  I=n935 ZN=n936
+.gate or2   A1=n936 A2=n333 Z=n937
+.gate or2   A1=n934 A2=n937 Z=n938
+.gate or2   A1=n933 A2=n938 Z=V197[10]
+.gate inv1  I=V84[11] ZN=n940
+.gate or2   A1=n1222 A2=n940 Z=n941
+.gate or2   A1=n317 A2=n361 Z=n942
+.gate and2  A1=V84[0] A2=n1151 Z=n943
+.gate or2   A1=n1226 A2=n863 Z=n944
+.gate inv1  I=n944 ZN=n945
+.gate or2   A1=n945 A2=n332 Z=n946
+.gate or2   A1=n946 A2=n943 Z=n947
+.gate or2   A1=n942 A2=n947 Z=V197[11]
+.gate inv1  I=V84[12] ZN=n949
+.gate or2   A1=n1223 A2=n949 Z=n950
+.gate and2  A1=n1238 A2=n950 Z=n951
+.gate inv1  I=n951 ZN=n952
+.gate or2   A1=n952 A2=n364 Z=n953
+.gate and2  A1=V84[1] A2=n1149 Z=n954
+.gate or2   A1=n1226 A2=n873 Z=n955
+.gate inv1  I=n955 ZN=n956
+.gate or2   A1=n956 A2=n334 Z=n957
+.gate or2   A1=n957 A2=n954 Z=n958
+.gate or2   A1=n953 A2=n958 Z=V197[12]
+.gate inv1  I=V84[13] ZN=n960
+.gate or2   A1=n1220 A2=n960 Z=n961
+.gate and2  A1=n1272 A2=n961 Z=n962
+.gate inv1  I=n962 ZN=n963
+.gate or2   A1=n963 A2=n367 Z=n964
+.gate and2  A1=V84[2] A2=n331 Z=n965
+.gate or2   A1=n1227 A2=n882 Z=n966
+.gate inv1  I=n966 ZN=n967
+.gate or2   A1=n967 A2=n334 Z=n968
+.gate or2   A1=n968 A2=n965 Z=n969
+.gate or2   A1=n964 A2=n969 Z=V197[13]
+.gate inv1  I=V84[14] ZN=n971
+.gate or2   A1=n1221 A2=n971 Z=n972
+.gate or2   A1=n309 A2=n370 Z=n973
+.gate and2  A1=V84[3] A2=n331 Z=n974
+.gate or2   A1=n1229 A2=n893 Z=n975
+.gate inv1  I=n975 ZN=n976
+.gate or2   A1=n976 A2=n332 Z=n977
+.gate or2   A1=n977 A2=n974 Z=n978
+.gate or2   A1=n973 A2=n978 Z=V197[14]
+.gate or2   A1=n1221 A2=n563 Z=n980
+.gate and2  A1=n1273 A2=n980 Z=n981
+.gate inv1  I=n981 ZN=n982
+.gate inv1  I=n567 ZN=n983
+.gate or2   A1=n982 A2=n983 Z=n984
+.gate and2  A1=V84[4] A2=n1151 Z=n985
+.gate or2   A1=n1228 A2=n904 Z=n986
+.gate inv1  I=n986 ZN=n987
+.gate or2   A1=n987 A2=n334 Z=n988
+.gate or2   A1=n988 A2=n985 Z=n989
+.gate or2   A1=n984 A2=n989 Z=V197[15]
+.gate inv1  I=V84[16] ZN=n991
+.gate or2   A1=n1221 A2=n991 Z=n992
+.gate and2  A1=n1271 A2=n992 Z=n993
+.gate inv1  I=V116[16] ZN=n994
+.gate or2   A1=n352 A2=n994 Z=n995
+.gate and2  A1=V84[5] A2=n331 Z=n996
+.gate or2   A1=n1230 A2=n914 Z=n997
+.gate inv1  I=n997 ZN=n998
+.gate or2   A1=n998 A2=n334 Z=n999
+.gate or2   A1=n999 A2=n996 Z=n1000
+.gate or2   A1=n320 A2=n1000 Z=V197[16]
+.gate or2   A1=n1220 A2=n593 Z=n1002
+.gate inv1  I=n1156 ZN=n1003
+.gate inv1  I=n597 ZN=n1004
+.gate or2   A1=n1003 A2=n1004 Z=n1005
+.gate and2  A1=V84[6] A2=n1151 Z=n1006
+.gate or2   A1=n1227 A2=n923 Z=n1007
+.gate inv1  I=n1007 ZN=n1008
+.gate or2   A1=n1008 A2=n332 Z=n1009
+.gate or2   A1=n1009 A2=n1006 Z=n1010
+.gate or2   A1=n1005 A2=n1010 Z=V197[17]
+.gate or2   A1=n1221 A2=n608 Z=n1012
+.gate and2  A1=n1256 A2=n1012 Z=n1013
+.gate inv1  I=n1013 ZN=n1014
+.gate inv1  I=n612 ZN=n1015
+.gate or2   A1=n1014 A2=n1015 Z=n1016
+.gate and2  A1=V84[7] A2=n1149 Z=n1017
+.gate or2   A1=n1230 A2=n930 Z=n1018
+.gate inv1  I=n1018 ZN=n1019
+.gate or2   A1=n1016 A2=n305 Z=V197[18]
+.gate or2   A1=n1222 A2=n623 Z=n1021
+.gate inv1  I=n1164 ZN=n1022
+.gate inv1  I=n627 ZN=n1023
+.gate or2   A1=n1022 A2=n1023 Z=n1024
+.gate and2  A1=V84[8] A2=n331 Z=n1025
+.gate or2   A1=n314 A2=n332 Z=n1026
+.gate or2   A1=n1026 A2=n1025 Z=n1027
+.gate or2   A1=n1024 A2=n1027 Z=V197[19]
+.gate or2   A1=n1220 A2=n637 Z=n1029
+.gate and2  A1=n1239 A2=n1029 Z=n1030
+.gate inv1  I=n1030 ZN=n1031
+.gate inv1  I=n641 ZN=n1032
+.gate or2   A1=n1031 A2=n1032 Z=n1033
+.gate and2  A1=V84[9] A2=n331 Z=n1034
+.gate or2   A1=n1227 A2=n949 Z=n1035
+.gate inv1  I=n1035 ZN=n1036
+.gate or2   A1=n1036 A2=n332 Z=n1037
+.gate or2   A1=n1037 A2=n1034 Z=n1038
+.gate or2   A1=n1033 A2=n1038 Z=V197[20]
+.gate or2   A1=n1222 A2=n652 Z=n1040
+.gate inv1  I=n1154 ZN=n1041
+.gate inv1  I=n656 ZN=n1042
+.gate or2   A1=n1041 A2=n1042 Z=n1043
+.gate or2   A1=n1228 A2=n960 Z=n1044
+.gate inv1  I=n1044 ZN=n1045
+.gate or2   A1=n1043 A2=n307 Z=V197[21]
+.gate or2   A1=n1222 A2=n667 Z=n1047
+.gate inv1  I=n671 ZN=n1048
+.gate or2   A1=n290 A2=n1048 Z=n1049
+.gate and2  A1=V84[11] A2=n1151 Z=n1050
+.gate or2   A1=n303 A2=n333 Z=n1051
+.gate or2   A1=n1050 A2=n1051 Z=n1052
+.gate or2   A1=n1049 A2=n1052 Z=V197[22]
+.gate or2   A1=n1222 A2=n682 Z=n1054
+.gate inv1  I=n1234 ZN=n1055
+.gate inv1  I=n686 ZN=n1056
+.gate or2   A1=n1055 A2=n1056 Z=n1057
+.gate and2  A1=V84[12] A2=n331 Z=n1058
+.gate or2   A1=n1227 A2=n563 Z=n1059
+.gate inv1  I=n1059 ZN=n1060
+.gate or2   A1=n1060 A2=n334 Z=n1061
+.gate or2   A1=n1061 A2=n1058 Z=n1062
+.gate or2   A1=n1057 A2=n1062 Z=V197[23]
+.gate or2   A1=n1275 A2=n923 Z=n1064
+.gate or2   A1=n1223 A2=n699 Z=n1065
+.gate and2  A1=n1064 A2=n1065 Z=n1066
+.gate inv1  I=n703 ZN=n1067
+.gate or2   A1=n1214 A2=n1067 Z=n1068
+.gate and2  A1=V84[13] A2=n331 Z=n1069
+.gate or2   A1=n1228 A2=n991 Z=n1070
+.gate inv1  I=n1070 ZN=n1071
+.gate or2   A1=n1071 A2=n334 Z=n1072
+.gate or2   A1=n1072 A2=n1069 Z=n1073
+.gate or2   A1=n1068 A2=n1073 Z=V197[24]
+.gate or2   A1=n1220 A2=n714 Z=n1075
+.gate inv1  I=n718 ZN=n1076
+.gate or2   A1=n1203 A2=n1076 Z=n1077
+.gate and2  A1=V84[14] A2=n331 Z=n1078
+.gate or2   A1=n1225 A2=n593 Z=n1079
+.gate inv1  I=n1079 ZN=n1080
+.gate or2   A1=n1080 A2=n332 Z=n1081
+.gate or2   A1=n1081 A2=n1078 Z=n1082
+.gate or2   A1=n1077 A2=n1082 Z=V197[25]
+.gate or2   A1=n1321 A2=n940 Z=n1084
+.gate or2   A1=n1223 A2=n730 Z=n1085
+.gate inv1  I=n1237 ZN=n1086
+.gate inv1  I=n734 ZN=n1087
+.gate or2   A1=n1086 A2=n1087 Z=n1088
+.gate and2  A1=V84[15] A2=n1148 Z=n1089
+.gate or2   A1=n1227 A2=n608 Z=n1090
+.gate inv1  I=n1090 ZN=n1091
+.gate or2   A1=n1091 A2=n333 Z=n1092
+.gate or2   A1=n1092 A2=n1089 Z=n1093
+.gate or2   A1=n1088 A2=n1093 Z=V197[26]
+.gate or2   A1=n1275 A2=n949 Z=n1095
+.gate or2   A1=n1189 A2=n747 Z=n1096
+.gate and2  A1=n1095 A2=n1096 Z=n1097
+.gate inv1  I=n751 ZN=n1098
+.gate or2   A1=n1215 A2=n1098 Z=n1099
+.gate and2  A1=V84[16] A2=n1148 Z=n1100
+.gate or2   A1=n1229 A2=n623 Z=n1101
+.gate inv1  I=n1101 ZN=n1102
+.gate or2   A1=n1102 A2=n334 Z=n1103
+.gate or2   A1=n1103 A2=n1100 Z=n1104
+.gate or2   A1=n1099 A2=n1104 Z=V197[27]
+.gate or2   A1=n1275 A2=n960 Z=n1106
+.gate or2   A1=n1223 A2=n764 Z=n1107
+.gate and2  A1=n1106 A2=n1107 Z=n1108
+.gate inv1  I=n768 ZN=n1109
+.gate or2   A1=n1216 A2=n1109 Z=n1110
+.gate and2  A1=V84[17] A2=n331 Z=n1111
+.gate or2   A1=n1225 A2=n637 Z=n1112
+.gate inv1  I=n1112 ZN=n1113
+.gate or2   A1=n1113 A2=n333 Z=n1114
+.gate or2   A1=n1111 A2=n1114 Z=n1115
+.gate or2   A1=n1110 A2=n1115 Z=V197[28]
+.gate or2   A1=n1189 A2=n781 Z=n1117
+.gate and2  A1=n1257 A2=n1117 Z=n1118
+.gate inv1  I=n1118 ZN=n1119
+.gate inv1  I=n785 ZN=n1120
+.gate or2   A1=n1119 A2=n1120 Z=n1121
+.gate and2  A1=V84[18] A2=n331 Z=n1122
+.gate or2   A1=n1225 A2=n652 Z=n1123
+.gate inv1  I=n1123 ZN=n1124
+.gate or2   A1=n1124 A2=n332 Z=n1125
+.gate or2   A1=n1125 A2=n1122 Z=n1126
+.gate or2   A1=n1121 A2=n1126 Z=V197[29]
+.gate or2   A1=n1275 A2=n563 Z=n1128
+.gate or2   A1=n1220 A2=n797 Z=n1129
+.gate and2  A1=n1128 A2=n1129 Z=n1130
+.gate inv1  I=n801 ZN=n1131
+.gate or2   A1=n1217 A2=n1131 Z=n1132
+.gate and2  A1=V84[19] A2=n1151 Z=n1133
+.gate or2   A1=n1229 A2=n667 Z=n1134
+.gate inv1  I=n1134 ZN=n1135
+.gate or2   A1=n1135 A2=n333 Z=n1136
+.gate or2   A1=n1136 A2=n1133 Z=n1137
+.gate or2   A1=n1132 A2=n1137 Z=V197[30]
+.gate and2  A1=n1299 A2=V84[23] Z=n1139
+.gate and2  A1=V84[20] A2=n1151 Z=n1140
+.gate or2   A1=n1139 A2=n1140 Z=n1141
+.gate and2  A1=n1322 A2=V84[16] Z=n1142
+.gate or2   A1=n1141 A2=n1142 Z=n1143
+.gate and2  A1=n1224 A2=V84[31] Z=n1144
+.gate or2   A1=n814 A2=n1144 Z=n1145
+.gate or2   A1=n332 A2=n1145 Z=n1146
+.gate or2   A1=n1143 A2=n1146 Z=V197[31]
+.gate inv1  I=n1315 ZN=n1148
+.gate inv1  I=n1315 ZN=n1149
+.gate inv1 I=n1330 ZN=n1150
+.gate inv1  I=n1315 ZN=n1151
+.gate or2   A1=n397 A2=n500 Z=V143[0]
+.gate or2   A1=n1232 A2=n893 Z=n1153
+.gate and2 A1=n1153 A2=n1040 Z=n1154
+.gate or2   A1=n1188 A2=n851 Z=n1155
+.gate and2 A1=n1155 A2=n1002 Z=n1156
+.gate and2 A1=n1158 A2=n1075 Z=n1157
+.gate or2   A1=n302 A2=n930 Z=n1158
+.gate and2 A1=n1160 A2=n924 Z=n1159
+.gate or2   A1=n1236 A2=n729 Z=n1160
+.gate and2 A1=n1261 A2=V47[1] Z=n1161
+.gate and2 A1=n1261 A2=V47[8] Z=n1162
+.gate or2   A1=n1188 A2=n873 Z=n1163
+.gate and2 A1=n1163 A2=n1021 Z=n1164
+.gate and2 A1=V84[5] A2=n1310 Z=n1165
+.gate and2 A1=V84[4] A2=n1310 Z=n1166
+.gate and2 A1=V84[9] A2=n1310 Z=n1167
+.gate and2 A1=V47[5] A2=n1310 Z=n1168
+.gate and2 A1=n454 A2=n492 Z=n1169
+.gate or2  A1=n503 A2=n506 Z=n1170
+.gate or2  A1=n511 A2=n514 Z=n1171
+.gate or2   A1=n1173 A2=V133[1] Z=n1172
+.gate or2  A1=n1327 A2=V133[6] Z=n1173
+.gate and2 A1=n1282 A2=n931 Z=n1174
+.gate inv1 I=n1314 ZN=n1175
+.gate or2  A1=n819 A2=n1199 Z=n1176
+.gate inv1 I=n1252 ZN=n1177
+.gate inv1  I=n1297 ZN=n1178
+.gate or2   A1=n1276 A2=n509 Z=n1179
+.gate or2   A1=n519 A2=n522 Z=n1180
+.gate or2   A1=n329 A2=n796 Z=n1181
+.gate inv1  I=V133[1] ZN=n1182
+.gate or2   A1=n1312 A2=n421 Z=n1183
+.gate and2  A1=n1313 A2=V133[1] Z=n1184
+.gate inv1  I=n1267 ZN=n1185
+.gate and2  A1=V15[1] A2=n1294 Z=n1186
+.gate inv1  I=n1330 ZN=n1187
+.gate inv1  I=n1322 ZN=n1188
+.gate inv1  I=n1224 ZN=n1189
+.gate inv1  I=V133[9] ZN=n1190
+.gate or2   A1=n1276 A2=n486 Z=n1191
+.gate or2   A1=n1276 A2=n1161 Z=n1192
+.gate or2   A1=n1276 A2=n501 Z=n1193
+.gate and2  A1=V47[3] A2=n1286 Z=n1194
+.gate or2   A1=n329 A2=n562 Z=n1195
+.gate or2   A1=n329 A2=n592 Z=n1196
+.gate or2   A1=n329 A2=n636 Z=n1197
+.gate or2   A1=n329 A2=n729 Z=n1198
+.gate and2  A1=V47[16] A2=n1311 Z=n1199
+.gate inv1  I=n1159 ZN=n1200
+.gate inv1  I=n1259 ZN=n1201
+.gate and2  A1=V84[10] A2=n1148 Z=n1202
+.gate inv1  I=n1157 ZN=n1203
+.gate or2   A1=n465 A2=n466 Z=V142[1]
+.gate and2  A1=n454 A2=n1260 Z=n1205
+.gate and2  A1=n454 A2=n1171 Z=n1206
+.gate and2  A1=n1180 A2=n528 Z=n1207
+.gate or2   A1=n581 A2=n591 Z=V150[0]
+.gate inv1  I=n802 ZN=n1209
+.gate inv1  I=n1265 ZN=n1210
+.gate and2 A1=n1212 A2=n894 Z=n1211
+.gate or2   A1=n1236 A2=n680 Z=n1212
+.gate and2 A1=V47[4] A2=n1323 Z=n1213
+.gate inv1 I=n1066 ZN=n1214
+.gate inv1 I=n1097 ZN=n1215
+.gate inv1 I=n1108 ZN=n1216
+.gate inv1 I=n1130 ZN=n1217
+.gate or2  A1=n1321 A2=n762 Z=n1218
+.gate inv1 I=n1281 ZN=n1219
+.gate inv1 I=n1219 ZN=n1220
+.gate inv1 I=n1219 ZN=n1221
+.gate inv1 I=n1219 ZN=n1222
+.gate inv1 I=n1224 ZN=n1223
+.gate inv1  I=n1281 ZN=n1224
+.gate inv1  I=n1299 ZN=n1225
+.gate inv1  I=n1299 ZN=n1226
+.gate inv1  I=n1299 ZN=n1227
+.gate inv1  I=n1175 ZN=n1228
+.gate inv1  I=n1175 ZN=n1229
+.gate inv1  I=n1175 ZN=n1230
+.gate inv1  I=n1258 ZN=n1231
+.gate inv1  I=n1288 ZN=n1232
+.gate inv1  I=n1258 ZN=n1233
+.gate and2 A1=n1235 A2=n1054 Z=n1234
+.gate or2   A1=n302 A2=n914 Z=n1235
+.gate inv1 I=n1289 ZN=n1236
+.gate and2 A1=n1084 A2=n1085 Z=n1237
+.gate or2  A1=n1321 A2=n779 Z=n1238
+.gate or2  A1=n1321 A2=n882 Z=n1239
+.gate or2  A1=n1321 A2=n904 Z=n1240
+.gate or2  A1=V133[2] A2=V133[6] Z=n1241
+.gate and2 A1=n454 A2=n477 Z=n1242
+.gate inv1 I=n865 ZN=n1243
+.gate or2  A1=n1264 A2=n592 Z=n1244
+.gate or2  A1=n1318 A2=n1306 Z=n1245
+.gate or2  A1=n420 A2=V133[0] Z=n1246
+.gate and2 A1=V47[2] A2=n1323 Z=n1247
+.gate or2  A1=n1326 A2=V133[2] Z=n1248
+.gate and2 A1=n454 A2=n459 Z=n1249
+.gate inv1 I=n291 ZN=n1250
+.gate and2 A1=n1280 A2=n826 Z=n1251
+.gate or2   A1=n1328 A2=n1279 Z=n1252
+.gate or2   A1=n1328 A2=n1295 Z=n1253
+.gate or2  A1=n1328 A2=n1278 Z=n1254
+.gate inv1 I=n1316 ZN=n1255
+.gate or2  A1=n1232 A2=n863 Z=n1256
+.gate or2  A1=n1232 A2=n971 Z=n1257
+.gate inv1 I=n1303 ZN=n1258
+.gate or2  A1=n302 A2=n817 Z=n1259
+.gate or2  A1=n480 A2=n483 Z=n1260
+.gate inv1 I=n1262 ZN=n1261
+.gate or2  A1=n286 A2=n324 Z=n1262
+.gate and2 A1=n827 A2=n828 Z=n1263
+.gate inv1 I=n1289 ZN=n1264
+.gate and2 A1=n913 A2=n915 Z=n1265
+.gate or2  A1=n1236 A2=n621 Z=n1266
+.gate and2 A1=n417 A2=n1278 Z=n1267
+.gate or2  A1=n1236 A2=n665 Z=n1268
+.gate or2  A1=n1236 A2=n606 Z=n1269
+.gate or2  A1=n1236 A2=n650 Z=n1270
+.gate or2  A1=n1188 A2=n840 Z=n1271
+.gate or2  A1=n1188 A2=n796 Z=n1272
+.gate or2  A1=n302 A2=n829 Z=n1273
+.gate or2  A1=n1319 A2=n1277 Z=n1274
+.gate inv1 I=n1288 ZN=n1275
+.gate inv1 I=n1277 ZN=n1276
+.gate or2  A1=n1185 A2=n1324 Z=n1277
+.gate and2 A1=n1308 A2=n335 Z=n1278
+.gate or2  A1=n423 A2=n1309 Z=n1279
+.gate or2  A1=n1326 A2=n323 Z=n1280
+.gate or2  A1=n1319 A2=n1278 Z=n1281
+.gate or2   A1=n1264 A2=n745 Z=n1282
+.gate inv1 I=n1316 ZN=n1283
+.gate and2 A1=n1300 A2=n1278 Z=n1284
+.gate or2  A1=n421 A2=n1250 Z=n1285
+.gate inv1 I=n1252 ZN=n1286
+.gate and2 A1=n1318 A2=n1305 Z=n1287
+.gate inv1 I=n1255 ZN=n1288
+.gate inv1 I=n1255 ZN=n1289
+.gate or2  A1=n524 A2=n1291 Z=n1290
+.gate or2  A1=n525 A2=n1304 Z=n1291
+.gate inv1 I=n1293 ZN=n1292
+.gate or2  A1=n1241 A2=V133[5] Z=n1293
+.gate inv1 I=n1295 ZN=n1294
+.gate or2  A1=n1185 A2=n1325 Z=n1295
+.gate and2 A1=n284 A2=n1182 Z=n1296
+.gate and2 A1=V133[5] A2=n1296 Z=n1297
+.gate and2 A1=n1320 A2=n1263 Z=n1298
+.gate inv1 I=n1314 ZN=n1299
+.gate or2  A1=n1185 A2=n1324 Z=n1300
+.gate and2 A1=V47[1] A2=n1323 Z=n1301
+.gate and2 A1=V47[5] A2=n1323 Z=n1302
+.gate or2  A1=n1262 A2=n1328 Z=n1303
+.gate or2  A1=V133[10] A2=n1305 Z=n1304
+.gate and2 A1=n1190 A2=V133[7] Z=n1305
+.gate inv1 I=V133[2] ZN=n1306
+.gate or2  A1=n1318 A2=n1306 Z=n1307
+.gate or2  A1=n1245 A2=n418 Z=n1308
+.gate or2  A1=n1183 A2=n324 Z=n1309
+.gate inv1 I=n1279 ZN=n1310
+.gate inv1 I=n1253 ZN=n1311
+.gate and2 A1=n1313 A2=V133[1] Z=n1312
+.gate or2  A1=n1292 A2=V133[8] Z=n1313
+.gate or2  A1=n1298 A2=n1262 Z=n1314
+.gate or2  A1=n1298 A2=n1279 Z=n1315
+.gate inv1 I=n1317 ZN=n1316
+.gate or2  A1=n1319 A2=n1295 Z=n1317
+.gate inv1 I=V133[1] ZN=n1318
+.gate and2 A1=n1320 A2=n1263 Z=n1319
+.gate and2 A1=n1251 A2=n344 Z=n1320
+.gate inv1 I=n1322 ZN=n1321
+.gate inv1 I=n1283 ZN=n1322
+.gate inv1 I=n1284 ZN=n1323
+.gate or2  A1=n1325 A2=n429 Z=n1324
+.gate or2  A1=n1184 A2=n1285 Z=n1325
+.gate or2  A1=n1327 A2=V133[6] Z=n1326
+.gate or2  A1=V133[9] A2=V133[4] Z=n1327
+.gate inv1 I=n1329 ZN=n1328
+.gate or2  A1=n1290 A2=n536 Z=n1329
+.gate inv1 I=n1254 ZN=n1330
+.end

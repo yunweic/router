@@ -1,0 +1,538 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.12)  16 NOV 2011 17:44
+entering extended mode
+ %&-line parsing enabled.
+**ecethesis.tex
+(./ecethesis.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(./uiucecethesis09.cls
+Document Class: uiucecethesis09 2010/06/23\ ECE3.10\ UIUC Thesis (PJC)
+(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count79
+\calc@Bcount=\count80
+\calc@Adimen=\dimen102
+\calc@Bdimen=\dimen103
+\calc@Askip=\skip41
+\calc@Bskip=\skip42
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count81
+\calc@Cskip=\skip43
+)
+\thesis@parindent=\dimen104
+
+(/usr/share/texmf-texlive/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/bk12.clo
+File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count82
+\c@chapter=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@figure=\count89
+\c@table=\count90
+\abovecaptionskip=\skip44
+\belowcaptionskip=\skip45
+\bibindent=\dimen105
+)
+\degree@dept@max=\skip46
+\degree@dept@wid=\skip47
+\degree@dept@test=\box26
+\thesis@chapskip=\skip48
+\chaptertitleheight=\skip49
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen106
+\Gin@req@width=\dimen107
+)
+\epsfxsize=\dimen108
+\epsfysize=\dimen109
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen110
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen111
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen112
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks16
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks17
+\eqnshift@=\dimen113
+\alignsep@=\dimen114
+\tagshift@=\dimen115
+\tagwidth@=\dimen116
+\totwidth@=\dimen117
+\lineht@=\dimen118
+\@envbody=\toks18
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/caption/caption.sty
+Package: caption 2009/10/09 v3.1k Customizing captions (AR)
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@indent=\dimen122
+\caption@parindent=\dimen123
+\caption@hangindent=\dimen124
+)
+\c@ContinuedFloat=\count104
+) (./ecethesis.aux
+(./intro.aux) (./boundary.aux) (./labeling.aux) (./routing.aux) (./snaking.aux)
+(./diagonal.aux) (./result.aux) (./concl.aux))
+\openout1 = `ecethesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+\chapternumberheight=\dimen125
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count105
+\scratchdimen=\dimen126
+\scratchbox=\box29
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen127
+\MPnumerator=\count109
+\everyMPtoPDFconversion=\toks21
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 56.
+ (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+\thesis@dim=\dimen128
+
+Underfull \vbox (badness 10000) detected at line 56
+ []
+
+
+Overfull \vbox (72.26999pt too high) detected at line 56
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 56
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 56
+ []
+
+[2] (./abs.tex) [2
+
+
+] [3] (./ack.tex) [4
+
+] (./ecethesis.toc
+Overfull \hbox (11.84496pt too wide) in paragraph at lines 7--7
+ [] \OT1/cmr/m/n/12 CHAP-TER 2 IN-TRO-DUC-ING LEFT AND RIGHT BOUND-ARIES 
+ []
+
+
+Overfull \hbox (19.66727pt too wide) in paragraph at lines 21--21
+ [] \OT1/cmr/m/n/12 CHAP-TER 5 WIRE SNAKING WITH LEFT AND RIGHT BOUND- 
+ []
+
+[5
+
+])
+\tf@toc=\write3
+\openout3 = `ecethesis.toc'.
+
+ [6]
+\openout2 = `intro.aux'.
+
+ (./intro.tex
+CHAPTER 1.
+[1
+
+
+
+] <sample_solution.png, id=31, 727.71875pt x 563.10374pt>
+File: sample_solution.png Graphic file (type png)
+
+<use sample_solution.png> [2 <./sample_solution.png (PNG copy)>]
+<snaking.png, id=38, 391.4625pt x 558.085pt>
+File: snaking.png Graphic file (type png)
+ <use snaking.png> [3 <./snaking.png (PNG copy)>] <sample_xarea2.png, id=43, 52
+4.96124pt x 410.53375pt>
+File: sample_xarea2.png Graphic file (type png)
+
+<use sample_xarea2.png> [4 <./sample_xarea2.png>] [5]
+<maxlength.png, id=53, 334.24875pt x 240.9pt>
+File: maxlength.png Graphic file (type png)
+ <use maxlength.png> [6 <./maxlength.png (PNG copy)>] [7] <parandfull.png, id=6
+1, 763.85374pt x 500.87125pt>
+File: parandfull.png Graphic file (type png)
+
+<use parandfull.png> [8 <./parandfull.png (PNG copy)>]
+
+LaTeX Warning: Reference `chap-boundary' on page 9 undefined on input line 136.
+
+
+[9]) [10]
+\openout2 = `boundary.aux'.
+
+ (./boundary.tex
+CHAPTER 2.
+[11
+
+
+
+] <guide.png, id=74, 332.24126pt x 554.07pt>
+File: guide.png Graphic file (type png)
+ <use guide.png> [12 <./guide.png (PNG copy)>]) [13]
+\openout2 = `labeling.aux'.
+
+ (./labeling.tex
+CHAPTER 3.
+[14
+
+
+
+] [15] [16] [17] <Screenshot.png, id=94, 690.58pt x 406.51875pt>
+File: Screenshot.png Graphic file (type png)
+
+<use Screenshot.png> [18 <./Screenshot.png (PNG copy)>]
+<noLower.png, id=99, 335.2525pt x 479.7925pt>
+File: noLower.png Graphic file (type png)
+ <use noLower.png> [19 <./noLower.png (PNG copy)>] <bottom_lower.png, id=103, 4
+37.635pt x 483.8075pt>
+File: bottom_lower.png Graphic file (type png)
+
+<use bottom_lower.png> [20 <./bottom_lower.png (PNG copy)>]
+<Screenshot2.png, id=107, 722.7pt x 963.6pt>
+File: Screenshot2.png Graphic file (type png)
+ <use Screenshot2.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21] <rightone.png, id=111, 434.62375pt x 482.80376pt>
+File: rightone.png Graphic file (type png)
+ <use rightone.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<right2.png, id=112, 436.63126pt x 485.815pt>
+File: right2.png Graphic file (type png)
+ <use right2.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<right3.png, id=113, 439.6425pt x 487.8225pt>
+File: right3.png Graphic file (type png)
+ <use right3.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<labeldone.png, id=114, 434.62375pt x 482.80376pt>
+File: labeldone.png Graphic file (type png)
+ <use labeldone.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [22] [23 <./Screenshot2.png (PNG copy)>] [24 <./rightone.png (PNG copy)> <./r
+ight2.png (PNG copy)>] [25 <./right3.png (PNG copy)> <./labeldone.png (PNG copy
+)>]
+\openout2 = `routing.aux'.
+
+ (./routing.tex
+CHAPTER 4.
+<zigzag.png, id=128, 826.08624pt x 551.05875pt>
+File: zigzag.png Graphic file (type png)
+ <use zigzag.png> [26
+
+
+
+ <./zigzag.png (PNG copy)>] <zigzag2.png, id=132, 827.09pt x 550.055pt>
+File: zigzag2.png Graphic file (type png)
+ <use zigzag2.png>
+[27 <./zigzag2.png (PNG copy)>]
+<nozigzag.png, id=136, 825.0825pt x 547.04375pt>
+File: nozigzag.png Graphic file (type png)
+ <use nozigzag.png>
+<leftorright.png, id=137, 823.075pt x 552.0625pt>
+File: leftorright.png Graphic file (type png)
+ <use leftorright.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28 <./nozigzag.png (PNG copy)>]
+<snakefail.png, id=141, 829.0975pt x 549.05125pt>
+File: snakefail.png Graphic file (type png)
+ <use snakefail.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<snakesuccess.png, id=142, 827.09pt x 550.055pt>
+File: snakesuccess.png Graphic file (type png)
+ <use snakesuccess.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<minpath.png, id=143, 826.08624pt x 554.07pt>
+File: minpath.png Graphic file (type png)
+ <use minpath.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<longeroute.png, id=144, 826.08624pt x 552.0625pt>
+File: longeroute.png Graphic file (type png)
+ <use longeroute.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [29 <./leftorright.png (PNG copy)>] [30 <./snakefail.png (PNG copy)> <./snake
+success.png (PNG copy)>] [31 <./minpath.png (PNG copy)> <./longeroute.png (PNG 
+copy)>]
+\openout2 = `snaking.aux'.
+
+ (./snaking.tex
+CHAPTER 5.
+<lastrow.png, id=155, 724.7075pt x 490.83376pt>
+File: lastrow.png Graphic file (type png)
+ <use lastrow.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[32
+
+
+
+] <lastrow2.png, id=159, 715.67375pt x 489.83pt>
+File: lastrow2.png Graphic file (type png)
+ <use lastrow2.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[33 <./lastrow.png (PNG copy)>] <twomids.png, id=163, 673.51625pt x 497.86pt>
+File: twomids.png Graphic file (type png)
+
+<use twomids.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34 <./lastrow2.png (PNG copy)>]
+<dynamic.png, id=167, 512.91624pt x 371.3875pt>
+File: dynamic.png Graphic file (type png)
+ <use dynamic.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<dynamic2.png, id=168, 594.22pt x 424.58624pt>
+File: dynamic2.png Graphic file (type png)
+ <use dynamic2.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[35 <./twomids.png (PNG copy)>] [36 <./dynamic.png (PNG copy)>]
+<example.png, id=176, 821.0675pt x 564.1075pt>
+File: example.png Graphic file (type png)
+ <use example.png> [37 <./dynamic2.png (PNG copy)>]) [38 <./example.png (PNG co
+py)>]
+\openout2 = `diagonal.aux'.
+
+ (./diagonal.tex
+CHAPTER 6.
+[39
+
+
+
+] [40] [41] <diagonal1.png, id=192, 554.07pt x 565.11125pt>
+File: diagonal1.png Graphic file (type png)
+
+<use diagonal1.png> <diagonal2.png, id=193, 569.12625pt x 568.1225pt>
+File: diagonal2.png Graphic file (type png)
+
+<use diagonal2.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[42 <./diagonal1.png (PNG copy)>] [43 <./diagonal2.png (PNG copy)>]
+<diagonal3.png, id=201, 565.11125pt x 568.1225pt>
+File: diagonal3.png Graphic file (type png)
+ <use diagonal3.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[44]) [45 <./diagonal3.png (PNG copy)>] [46]
+\openout2 = `result.aux'.
+
+ (./result.tex
+CHAPTER 7.
+<orig.png, id=211, 840.13875pt x 406.51875pt>
+File: orig.png Graphic file (type png)
+ <use orig.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<no_bound.png, id=212, 839.135pt x 418.56375pt>
+File: no_bound.png Graphic file (type png)
+ <use no_bound.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<boundary.png, id=213, 836.12375pt x 416.55624pt>
+File: boundary.png Graphic file (type png)
+ <use boundary.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<dia.png, id=214, 575.14874pt x 566.115pt>
+File: dia.png Graphic file (type png)
+ <use dia.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<diagonal.png, id=215, 563.10374pt x 568.1225pt>
+File: diagonal.png Graphic file (type png)
+ <use diagonal.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [47
+
+
+
+] [48 <./orig.png (PNG copy)> <./no_bound.png (PNG copy)>] [49 <./boundary.png 
+(PNG copy)>] [50 <./dia.png (PNG copy)>] [51 <./diagonal.png (PNG copy)>]
+\openout2 = `concl.aux'.
+
+
+(./concl.tex
+CHAPTER 8.
+[52
+
+
+
+]) [53] (./ecethesis.bbl) [54
+
+
+
+] (./ecethesis.aux (./intro.aux)
+(./boundary.aux) (./labeling.aux) (./routing.aux) (./snaking.aux)
+(./diagonal.aux) (./result.aux) (./concl.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3116 strings out of 495061
+ 44552 string characters out of 1182621
+ 109094 words of memory out of 3000000
+ 6196 multiletter control sequences out of 15000+50000
+ 8600 words of font info for 31 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 36i,7n,38p,1324b,279s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public
+/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on ecethesis.pdf (61 pages, 5083804 bytes).
+PDF statistics:
+ 273 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+

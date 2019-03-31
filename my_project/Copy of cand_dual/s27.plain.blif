@@ -1,0 +1,18 @@
+# Benchmark "s27" written by ABC on Sun Dec  7 16:50:25 2008
+.model s27
+.inputs G17 G7 G6 G5 clock G0 G1 G2 G3
+.outputs G17 n10 n21 clock n16 n11
+.default_input_arrival 0 0
+.gate inv1 I=n16 ZN=n10
+.gate and2 A1=n17 A2=n23 Z=n16
+.gate or2  A1=n24 A2=n18 Z=n17
+.gate and2 A1=n19 A2=G3 Z=n18
+.gate inv1 I=n20 ZN=n19
+.gate or2  A1=G1 A2=G7 Z=n20
+.gate inv1  I=G0 ZN=n21_1
+.gate and2  A1=G0 A2=n10 Z=n11
+.gate inv1  I=G5 ZN=n23
+.gate and2  A1=G6 A2=n21_1 Z=n24
+.gate and2  A1=n20 A2=n26 Z=n21
+.gate inv1  I=G2 ZN=n26
+.end
